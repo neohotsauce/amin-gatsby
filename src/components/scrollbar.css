@@ -1,75 +1,68 @@
 ::-webkit-scrollbar {
-  width: 0px;
-}
 
+       width:3.5px;
+}
+ 
 /* Track */
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px transparent;
-  -webkit-border-radius: 0px;
-  border-radius: 0px;
-  background-color: white;
+    -webkit-box-shadow: inset 0 0 6px transparent; 
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color: black;
 }
-
+ 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 0px;
-  border-radius: 0px;
-  background: rgb(26, 72, 80);
-  background: linear-gradient(
-    -45deg,
-    rgba(26, 72, 80, 1) 0%,
-    rgba(63, 185, 136, 1) 0%,
-    rgba(78, 189, 189, 1) 0%,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(44, 142, 142, 1) 75%
-  );
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+   background:#46a786;
+    
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-  background-color: transparent;
-  -webkit-border-radius: 0px;
-  border-radius: 0px;
+	background-color: transparent;
+	  -webkit-border-radius: 0px;
+    border-radius: 0px;
+    
+    
 }
 
+
+
 @media screen and (max-width: 768px) {
-  ::-webkit-scrollbar {
+         ::-webkit-scrollbar {
     width: 2px;
     display: none;
     visibility: hidden;
-  }
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
 
-  /* Track */
-  ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 2px transparent;
+    -webkit-box-shadow: inset 0 0 2px transparent; 
     -webkit-border-radius: 0px;
     border-radius: 0px;
     background-color: transparent;
     display: none;
     visibility: hidden;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
     -webkit-border-radius: 0px;
     border-radius: 0px;
-    background: rgb(26, 72, 80);
-    background: linear-gradient(
-      -45deg,
-      rgba(26, 72, 80, 1) 0%,
-      rgba(63, 185, 136, 1) 0%,
-      rgba(78, 189, 189, 1) 0%,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(44, 142, 142, 1) 75%
-    );
+    background:#46a786;
     display: none;
     visibility: hidden;
-  }
-  ::-webkit-scrollbar-thumb:window-inactive {
+    
+}
+::-webkit-scrollbar-thumb:window-inactive {
     background-color: transparent;
-    -webkit-border-radius: 0px;
+      -webkit-border-radius: 0px;
     border-radius: 0px;
     display: none;
     visibility: hidden;
-  }
+    
+    
+}
+
 }
