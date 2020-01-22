@@ -8,10 +8,10 @@ const AboutPagePreview = ({ entry, getAsset, widgetFor }) => {
   if (data) {
     return (
       <AboutPageTemplate
-        banner={data.banner || []}
-        overview={data.overview || []}
-        message={data.message || []}
-        certification={data.certification || []}
+        banner={data.banner || {}}
+        overview={data.overview || {}}
+        message={data.message || {}}
+        certification={data.certification || {}}
       />
     );
   } else {

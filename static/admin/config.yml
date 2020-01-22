@@ -179,7 +179,7 @@ collections:
                   { label: Desctiption, name: description, widget: text },
                   { label: Image, name: image, widget: image },
                   { label: Signature, name: signature, widget: image },
-                  { label: Full Name, name: fullName, widget: strign },
+                  { label: Full Name, name: fullName, widget: string },
                   { label: Designation, name: designation, widget: string },
                 ],
             }
