@@ -2,48 +2,62 @@
 templateKey: index-page
 banners:
   - image: /img/bg1.jpg
-    text: >
+    text: |
       banner 1
   - image: /img/bg2.jpg
-    text: >
+    text: |
       banner 2
   - image: /img/bg3.jpg
-    text: >
+    text: |
       banner 3
 mainpitch:
-  description: >
-    Aminaedi Equities (AE) is a privately owned limited liability company
-    established in the Maldives in 2014. Our Business model is based on
-    investments in diverse businesses and asset management using special purpose
-    vehicles. AE focuses on investments in the Maldivian construction and real
-    estate industry.
-  title: Aminaedi Equities
+  description: >-
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est
+    laborum."
+  title: ESTABLISHED BY TRUST.
 stats:
-  - title: >
+  - info: |
+      206
+    title: |
       Projects
         Completed
-    info: >
-      206
 servicesIntro:
+  description: >
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est
+    laborum."
+  image: /img/building.png
   title:
-    mainPhrase: >
+    mainPhrase: |
       SOLUTION
-    subPhrase: >
+    subPhrase: |
       TO
        YOUR BUILDING.
-  description: >
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  image: /img/building.png
 projectsIntro:
+  description: >
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est
+    laborum."
+  image: /img/project_bg.jpg
   title:
-    mainPhrase: >
+    mainPhrase: |
       MATTER.
-    subPhrase: >
+    subPhrase: |
       PROJECTS
         THAT
-  description: >
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  image: /img/project_bg.jpg
 trustBadges:
   - image: /img/bahrain-bay.png
   - image: /img/bahrain-bay.png
@@ -52,13 +66,14 @@ trustBadges:
   - image: /img/bahrain-bay.png
   - image: /img/bahrain-bay.png
 achievements:
-  - title: >
-      4 Star Employment Agency
-    description: >
+  - description: |
       The Srilanka Beuro of Foreign Investment
     image: /img/award1.jpg
+    title: |
+      4 Star Employment Agency
 companies:
-  - name: >
+  - image: /img/logo_2.jpg
+    name: |
       Amin buildware
-    image: /img/logo_2.jpg
 ---
+
