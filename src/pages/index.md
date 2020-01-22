@@ -1,13 +1,13 @@
 ---
 templateKey: index-page
 banners:
-  - image: /img/bg4.jpg
+  - image: /img/bg1.jpg
     text: >
       banner 1
-  - image: /img/bg5.jpg
+  - image: /img/bg2.jpg
     text: >
       banner 2
-  - image: /img/bg6.jpg
+  - image: /img/bg3.jpg
     text: >
       banner 3
 mainpitch:
