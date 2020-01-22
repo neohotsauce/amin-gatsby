@@ -1,3 +1,13 @@
+$(document).ready(() => {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1) {
+      $(".navigation").addClass("scroller");
+    } else {
+      $(".navigation").removeClass("scroller");
+    }
+  });
+});
+
 // TO THE TOP
 
 jQuery(document).ready(function($) {
@@ -32,34 +42,29 @@ jQuery(document).ready(function($) {
   });
 });
 
-////* date
+///// DATA FILTERATION --- WORK
 
-$(".count").each(function() {
-  $(this)
-    .prop("Counter", 0)
-    .animate(
-      {
-        Counter: $(this).text()
-      },
-      {
-        duration: 1500,
-        easing: "swing",
-        step: function(now) {
-          $(this).text(Math.ceil(now));
-        }
-      }
-    );
-});
+$(document).ready(function() {
+  $(".filter-button").click(function() {
+    var value = $(this).attr("data-filter");
 
-// copied from the index scripts
-window.addEventListener("scroll", function(e) {
-  if ($(window).scrollTop() <= 50) {
-    $(".wow").removeClass("animated");
-    $(".wow").removeAttr("style");
-    new WOW().init();
+    if (value == "all") {
+      //$('.filter').removeClass('hidden');
+      $(".filter").show("1000");
+    } else {
+      //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+      //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+      $(".filter")
+        .not("." + value)
+        .hide("3000");
+      $(".filter")
+        .filter("." + value)
+        .show("3000");
+    }
+  });
+
+  if ($(".filter-button").removeClass("active")) {
+    $(this).removeClass("active");
   }
+  $(this).addClass("active");
 });
-
-function myFunction(x) {
-  x.classList.toggle("change");
-}

@@ -3,10 +3,23 @@ import PropTypes from "prop-types";
 import { Link, graphql, navigate } from "gatsby";
 import Recaptcha from "react-google-recaptcha";
 import Layout from "../components/Layout";
-import BannerRoll from "../components/BannerRoll";
-import Investments from "../components/Investments";
 
-export const IndexPageTemplate = ({ mainpitch, banners }) => {
+import BannerRoll from "../components/landing/BannerRoll";
+import Stats from "../components/landing/Stats";
+import TrustBadges from "../components/landing/TrustBadges";
+import Achievements from "../components/landing/Achievements";
+import Companies from "../components/landing/Companies";
+
+export const IndexPageTemplate = ({
+  mainpitch,
+  banners,
+  stats,
+  servicesIntro,
+  projectsIntro,
+  badges,
+  achievements,
+  companies
+}) => {
   const recaptchaRef = createRef();
 
   const RECAPTCHA_KEY =
@@ -68,132 +81,104 @@ export const IndexPageTemplate = ({ mainpitch, banners }) => {
       <BannerRoll banners={banners} />
 
       {/* mainpitch goes below */}
-      <div className="block2 " id="intro">
+      <div className="block2">
         <div className="container">
-          <div className="row px-3  ">
-            <div className="col-12 " align="center">
-              <h1 className="animated  fadeInUp">{mainpitch.title}</h1>
+          <div className="row px-3">
+            <div className="col-lg-4 col-xl-4 col-12 ">
+              <h1>{mainpitch.title}</h1>
+            </div>
+
+            <div className="col-lg-8 col-xl-8 col-12">
+              <p>{mainpitch.description}</p>
               <br />
-              <p className="width75 animated  fadeInUp">
-                {mainpitch.description}
-              </p>
-              <br />
-              <Link to="/story" className="btn1 animated wow fadeInUp">
-                READ MORE{" "}
+              <Link className="btn1" to="about.html">
+                LEARN MORE...{" "}
               </Link>
-              <br />
             </div>
           </div>
         </div>
       </div>
 
-      <Investments />
+      <Stats stats={stats} />
 
-      {/* contact form goes below */}
-      <div className="block2 bg5" id="contact">
-        <div className="container-fluid">
-          <div className="row px-3  ">
-            <div className="col-12 pb-2 pb-lg-5 " align="center">
-              <h1 className="animated  fadeInUp">Get Connected</h1>
+      {/* services intro */}
+      <div className="block2 ">
+        <div className="container">
+          <div className="row px-3">
+            <div className="col-lg-5 col-xl-5 col-12 ">
+              <h1>
+                <span className="extralarge">
+                  {servicesIntro.title.mainPhrase}
+                </span>{" "}
+                <i className="l-space">{servicesIntro.title.subPhrase}</i>{" "}
+              </h1>
               <br />
-              <p className="width75 animated  fadeInUp">
-                {" "}
-                Email us at info@aminaedi.com
-              </p>
+              <p>{servicesIntro.description}</p>
+              <br />
+              <Link className="btn1" to="/about">
+                VIEW SERVICES...
+              </Link>
             </div>
 
-            <div
-              className="col-12 col-sm-12 col-md-6 col-lg-6col-xl-6 animated  fadeInUp"
-              align="center"
-            >
-              <iframe
-                className="map-iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.2150607372!2d73.51331875067078!3d4.178082347114913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b3f7fcde5633a9d%3A0x5728bf77e7d6cb9!2sAminaedi%20Equity%20Pvt%20Ltd!5e0!3m2!1sen!2smv!4v1578246098701!5m2!1sen!2smv"
-                width="100%"
-                height="500px"
-                frameBorder="0"
-                allowFullScreen=""
-              ></iframe>
-            </div>
-
-            <div
-              className="col-12 col-sm-12 col-md-6 col-lg-6col-xl-6 animated  fadeInUp"
-              align="center"
-            >
-              <form
-                id="contact-form"
-                className="contact-form"
-                method="post"
-                action="/"
-                name="contact-form"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                data-netlify-recaptcha="true"
-                onSubmit={handleSubmit}
-              >
-                <input type="hidden" name="form-name" value="contact-form" />
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        className="form-control"
-                        name="name"
-                        autoComplete="off"
-                        id="Name"
-                        placeholder="Name"
-                        value={name}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <input
-                        type="email"
-                        className="form-control"
-                        name="email"
-                        autoComplete="off"
-                        id="email"
-                        placeholder="E-mail"
-                        value={email}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-md-12">
-                    <div className="form-group">
-                      <textarea
-                        className="form-control textarea"
-                        rows="3"
-                        name="messagecontent"
-                        id="Message"
-                        placeholder="Please state any inquiry in here..."
-                        onChange={handleChange}
-                        value={messagecontent}
-                        required
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-                <Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />
-                <br />
-                <div className="row">
-                  <div className="col-md-12" align="left">
-                    <button type="submit" className="btn main-btn pull-right ">
-                      Send a message
-                    </button>
-                  </div>
-                </div>
-              </form>
+            <div className="col-lg-7 col-xl-7 col-12">
+              {!servicesIntro.image.publicURL ? (
+                <img
+                  src={servicesIntro.image}
+                  className="img-fluid pt-lg-1"
+                  alt="..."
+                />
+              ) : (
+                <img
+                  src={servicesIntro.image.publicURL}
+                  className="img-fluid pt-lg-1"
+                  alt="..."
+                />
+              )}
             </div>
           </div>
         </div>
       </div>
+
+      {/* projects section */}
+      <div
+        className="block2 bg2 "
+        style={{
+          background: `url(${
+            !projectsIntro.image.publicURL
+              ? projectsIntro.image
+              : projectsIntro.image.publicURL
+          }) no-repeat center center`
+        }}
+      >
+        <div className="container">
+          <div className="row px-3">
+            <div className="col-lg-6 col-xl-6 col-12 "></div>
+
+            <div className="col-lg-6 col-xl-6 col-12">
+              <h1>
+                <i className="l-space">
+                  {projectsIntro.title.subPhrase}
+                  <span className="extralarge">
+                    {projectsIntro.title.mainPhrase}
+                  </span>
+                </i>{" "}
+              </h1>
+              <br />
+              <p>{projectsIntro.description}</p>
+              <br />
+              <Link className="btn1" to="projects">
+                VIEW PROJECTS...
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <TrustBadges badges={badges} />
+
+      <Achievements achievements={achievements} />
+
+      <Companies companies={companies} />
     </div>
   );
 };
@@ -204,14 +189,20 @@ IndexPageTemplate.propTypes = {
   banners: PropTypes.array
 };
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data, location }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout>
+    <Layout location={location}>
       <IndexPageTemplate
         mainpitch={frontmatter.mainpitch}
         banners={frontmatter.banners}
+        stats={frontmatter.stats}
+        servicesIntro={frontmatter.servicesIntro}
+        projectsIntro={frontmatter.projectsIntro}
+        badges={frontmatter.trustBadges}
+        achievements={frontmatter.achievements}
+        companies={frontmatter.companies}
       />
     </Layout>
   );
@@ -240,6 +231,47 @@ export const pageQuery = graphql`
         mainpitch {
           title
           description
+        }
+        stats {
+          title
+          info
+        }
+        servicesIntro {
+          title {
+            mainPhrase
+            subPhrase
+          }
+          image {
+            publicURL
+          }
+          description
+        }
+        projectsIntro {
+          title {
+            mainPhrase
+            subPhrase
+          }
+          description
+          image {
+            publicURL
+          }
+        }
+        trustBadges {
+          image {
+            publicURL
+          }
+        }
+        achievements {
+          title
+          description
+          image {
+            publicURL
+          }
+        }
+        companies {
+          image {
+            publicURL
+          }
         }
       }
     }

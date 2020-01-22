@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import Footer from "../components/Footer";
+import Footer from "./layout/Footer";
 import Navbar from "../components/Navbar";
 
 import useSiteMetadata from "./SiteMetadata";
@@ -9,9 +9,9 @@ import { withPrefix } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./scrollbar.css";
 import "./animate.css";
-import "./styles.css";
+import "./style.css";
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ children, location }) => {
   const { title, description } = useSiteMetadata();
 
   useEffect(() => {
@@ -53,11 +53,6 @@ const TemplateWrapper = ({ children }) => {
     ssScript.src = `${withPrefix("/")}js/smoothscroll.js`;
     ssScript.async = true;
     document.body.appendChild(ssScript);
-
-    const wowScript = document.createElement("script");
-    wowScript.src = `${withPrefix("/")}js/wow.js`;
-    wowScript.async = true;
-    document.body.appendChild(wowScript);
   }, []);
 
   return (
@@ -69,87 +64,92 @@ const TemplateWrapper = ({ children }) => {
         <link
           rel="apple-touch-icon"
           sizes="57x57"
-          href={`${withPrefix("/")}img/apple-icon-57x57.png`}
+          href={`${withPrefix("/")}img/fav/apple-icon-57x57.png`}
         />
         <link
           rel="apple-touch-icon"
           sizes="60x60"
-          href={`${withPrefix("/")}img/apple-icon-60x60.png`}
+          href={`${withPrefix("/")}img/fav/apple-icon-60x60.png`}
         />
         <link
           rel="apple-touch-icon"
           sizes="72x72"
-          href={`${withPrefix("/")}img/apple-icon-72x72.png`}
+          href={`${withPrefix("/")}img/fav/apple-icon-72x72.png`}
         />
         <link
           rel="apple-touch-icon"
           sizes="76x76"
-          href={`${withPrefix("/")}img/apple-icon-76x76.png`}
+          href={`${withPrefix("/")}img/fav/apple-icon-76x76.png`}
         />
         <link
           rel="apple-touch-icon"
           sizes="114x114"
-          href={`${withPrefix("/")}img/apple-icon-114x114.png`}
+          href={`${withPrefix("/")}img/fav/apple-icon-114x114.png`}
         />
         <link
           rel="apple-touch-icon"
           sizes="120x120"
-          href={`${withPrefix("/")}img/apple-icon-120x120.png`}
+          href={`${withPrefix("/")}img/fav/apple-icon-120x120.png`}
         />
         <link
           rel="apple-touch-icon"
           sizes="144x144"
-          href={`${withPrefix("/")}img/apple-icon-144x144.png`}
+          href={`${withPrefix("/")}img/fav/apple-icon-144x144.png`}
         />
         <link
           rel="apple-touch-icon"
           sizes="152x152"
-          href={`${withPrefix("/")}img/apple-icon-152x152.png`}
+          href={`${withPrefix("/")}img/fav/apple-icon-152x152.png`}
         />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={`${withPrefix("/")}img/apple-icon-180x180.png`}
+          href={`${withPrefix("/")}img/fav/apple-icon-180x180.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="192x192"
-          href={`${withPrefix("/")}img/android-icon-192x192.png`}
+          href={`${withPrefix("/")}img/fav/android-icon-192x192.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={`${withPrefix("/")}img/favicon-32x32.png`}
+          href={`${withPrefix("/")}img/fav/favicon-32x32.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="96x96"
-          href={`${withPrefix("/")}img/favicon-96x96.png`}
+          href={`${withPrefix("/")}img/fav/favicon-96x96.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={`${withPrefix("/")}img/favicon-16x16.png`}
+          href={`${withPrefix("/")}img/fav/favicon-16x16.png`}
         />
-        <link rel="manifest" href={`${withPrefix("/")}img/manifest.json`} />
+        <link rel="manifest" href={`${withPrefix("/")}img/fav/manifest.json`} />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta
           name="msapplication-TileImage"
-          content={`${withPrefix("/")}img/ms-icon-144x144.png`}
+          content={`${withPrefix("/")}img/fav/ms-icon-144x144.png`}
         />
         <meta name="theme-color" content="#ffffff" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Muli&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap"
+          rel="stylesheet"
+        />
         />
       </Helmet>
-      <Navbar />
+      <Navbar location={location} />
       <div>{children}</div>
       <Footer />
-      <a href="#top" className="cd-top cd-is-visible cd-fade-out">
-        <i className="fa fa-angle-up"></i>
-      </a>
     </div>
   );
 };

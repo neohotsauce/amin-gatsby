@@ -1,17 +1,9 @@
-/**MENU**/
-$(document).ready(function() {
-  $("#menubutton").on("click", e => {
-    $("#mainmenu").toggle();
+$(document).ready(() => {
+  $(document).on("scroll", function() {
+    if ($(document).scrollTop() > 86) {
+      $("#banner").addClass("shrink");
+    } else {
+      $("#banner").removeClass("shrink");
+    }
   });
-
-  $("#menusection ul li a").click(function() {
-    $("#mainmenu").fadeOut(1000);
-    $("#menubutton").click();
-  });
-});
-/**carousel**/
-
-$("#carouselExampleIndicators").carousel({
-  interval: 1500,
-  cycle: true
 });

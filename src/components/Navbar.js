@@ -1,54 +1,93 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Link } from "gatsby";
 import logo from "../img/logo.png";
 
-const Navbar = () => {
-  const toggleNav = x => {
-    x.currentTarget.classList.toggle("change");
-  };
+const Navbar = ({ location }) => {
+  const [pagePath, setPath] = useState("");
+
+  useEffect(() => {
+    setPath(location ? location.pathname.substr(1) : "404");
+  }, [location]);
 
   return (
     <Fragment>
-      <div className="navbarea"></div>
-
-      <div className="brand_logo animated fadeInDown">
-        <Link to="/" title="Aminaedi Logo">
-          <img src={logo} />
-        </Link>
-      </div>
-
-      <div
-        className="menu_icon animated fadeInDown"
-        id="menubutton"
-        onClick={e => toggleNav(e)}
+      <nav
+        className="navbar navbar-expand-md navbar-dark fixed-top"
+        id="banner"
       >
-        <div className="bar1"></div>
-        <div className="bar2"></div>
-      </div>
+        <Link className="navbar-brand" to="/">
+          <img src={logo} className="img-fluid" />{" "}
+        </Link>
 
-      <div id="mainmenu">
-        <div id="menusection">
-          <ul>
-            <li className="animated fadeIn">
-              <Link to="/" className="active">
-                Home{" "}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul className="navbar-nav ml-auto">
+            <li className={pagePath === "" ? "nav-item active" : "nav-item"}>
+              <Link className="nav-link" to="/">
+                Home
               </Link>
             </li>
-
-            <li className="animated fadeIn">
-              <Link to="/story">Our Story</Link>
+            <li
+              className={pagePath === "about" ? "nav-item active" : "nav-item"}
+            >
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
             </li>
-
-            <li className="animated fadeIn">
-              <Link to="/#investments">Our Investments</Link>
+            <li
+              className={
+                pagePath === "services" ? "nav-item active" : "nav-item"
+              }
+            >
+              <Link className="nav-link" to="/services">
+                Services
+              </Link>
             </li>
-
-            <li className="animated fadeIn">
-              <Link to="/#contact">Contact</Link>
+            <li
+              className={
+                pagePath === "projects" ? "nav-item active" : "nav-item"
+              }
+            >
+              <Link className="nav-link" to="/projects">
+                Projects
+              </Link>
+            </li>
+            <li
+              className={
+                pagePath === "development" ? "nav-item active" : "nav-item"
+              }
+            >
+              <Link className="nav-link" to="/development">
+                Developments
+              </Link>
+            </li>
+            <li
+              className={pagePath === "news" ? "nav-item active" : "nav-item"}
+            >
+              <Link className="nav-link" to="news">
+                News
+              </Link>
+            </li>
+            <li
+              className={
+                pagePath === "contact" ? "nav-item active" : "nav-item"
+              }
+            >
+              <Link className="nav-link" to="contact">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
-      </div>
+      </nav>
     </Fragment>
   );
 };

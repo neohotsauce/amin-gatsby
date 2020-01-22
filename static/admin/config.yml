@@ -41,6 +41,16 @@ collections:
               widget: "hidden",
               default: "index-page",
             }
+            - {
+              label: Banners,
+              name: banners,
+              widget: list,
+              fields:
+                [
+                  { label: Image, name: image, widget: image },
+                  { label: Text, name: text, widget: text },
+                ],
+            }
           - {
               label: Mainpitch,
               name: mainpitch,
@@ -52,12 +62,11 @@ collections:
                 ],
             }
           - {
-              label: Banners,
-              name: banners,
-              widget: list,
-              fields:
-                [
-                  { label: Image, name: image, widget: image },
-                  { label: Text, name: text, widget: text },
-                ],
-            }
+            label: Stats, name: stats, widget: list, fields: [{label: Title, name: title, widget: text}, {label: Info, name: info, widget: string}]
+          }
+          - {label: Services Intro, name: servicesIntro, widget: object, fields: [{label: Title, name: title, widget: object, fields: [{label: Main phrase, name: mainPhrase, widget: text}, {label: Sub phrase, name: subPhrase, widget: text}]}, {label: Description, name: description, widget: text}, {label: Image, name: image, widget: image}]}
+          - {label: Projects, name: projectsIntro, widget: object, fields: [{label: Title, name: title, widget: object, fields: [{label: Main phrase, name: mainPhrase, widget: text}, {label: Sub phrase, name: subPhrase, widget: text}]}, {label: Description, name: description, widget: text}, {label: Image, name: image, widget: image}]}
+          - {label: Trust badges, name: trustBadges, widget: list, fields: [{label: Image, name: image, widget: image}]}
+          - {label: Achievements, name: achievements, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}, {label: Image, name: image, widget: image}]}
+          - {label: Companies, name: companies, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Image, name: image, widget: image}]}
+          

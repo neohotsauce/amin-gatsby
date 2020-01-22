@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Aminaedi Equities",
-    description:
-      "Aminaedi Equities (AE) is a privately owned limited liability company established in the Maldives in 2014. Our Business model is based on investments in diverse businesses and asset management using special purpose vehicles. AE focuses on investments in the Maldivian construction and real estate industry."
+    title: "Amin Construction",
+    description: "We are the best ehm."
   },
   plugins: [
     "gatsby-plugin-sharp",
