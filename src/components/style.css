@@ -359,7 +359,7 @@ a.btn2:hover {
 }
 
 .bgservices {
-  background: url(/img/services.jpg) no-repeat center bottom;
+  /* background: url(/img/services.jpg) no-repeat center bottom; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

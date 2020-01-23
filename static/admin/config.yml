@@ -199,3 +199,34 @@ collections:
                   },
                 ],
             }
+      - file: "src/pages/services.md"
+        label: "Services Page"
+        name: "services"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "services-page",
+            }
+          - {
+              label: Banner,
+              name: banner,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Image, name: image, widget: image },
+                ],
+            }
+          - {
+              label: Services,
+              name: services,
+              widget: list,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Image, name: image, widget: image },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
