@@ -7,32 +7,33 @@ export const ServicesPageTemplate = ({ banner, services }) => {
   return (
     <Fragment>
       <div
-        class="topbanner bgservices"
+        className="topbanner bgservices"
         style={{
           background: `url(${
             !banner.image.publicURL ? banner.image : banner.image.publicURL
-          }) no-repeat center bottom`
+          }) no-repeat center bottom`,
+          backgroundSize: "cover"
         }}
       >
-        <div class="d-flex align-items-center justify-content-center ">
-          <h2 class="white xl">{banner.title}</h2>
+        <div className="d-flex align-items-center justify-content-center ">
+          <h2 className="white xl">{banner.title}</h2>
         </div>
       </div>
 
-      <div class="block2 ">
-        <div class="container">
-          <div class="row px-3">
+      <div className="block2 ">
+        <div className="container">
+          <div className="row px-3">
             {services.map((service, index) => (
               <div
                 key={index}
-                class="col-lg-6 col-xl-6 col-12 pb-3"
+                className="col-lg-6 col-xl-6 col-12 pb-3"
                 align="center"
               >
                 <h2>{service.title}</h2>
                 <br />
-                <div class="row">
+                <div className="row">
                   <div
-                    class="col-lg-6 col-xl-6 col-sm-6 col-12 "
+                    className="col-lg-6 col-xl-6 col-sm-6 col-12 "
                     align="center"
                   >
                     <img
@@ -41,11 +42,11 @@ export const ServicesPageTemplate = ({ banner, services }) => {
                           ? service.image
                           : service.image.publicURL
                       }
-                      class="img-fluid"
+                      className="img-fluid"
                     />
                   </div>
                   <div
-                    class="col-lg-6 col-xl-6 col-sm-6 col-12 pt-2"
+                    className="col-lg-6 col-xl-6 col-sm-6 col-12 pt-2"
                     align="left"
                   >
                     <p style={{ whiteSpace: "pre-line" }}>

@@ -147,7 +147,8 @@ export const IndexPageTemplate = ({
             !projectsIntro.image.publicURL
               ? projectsIntro.image
               : projectsIntro.image.publicURL
-          }) no-repeat center center`
+          }) no-repeat center center`,
+          backgroundSize: "cover"
         }}
       >
         <div className="container">

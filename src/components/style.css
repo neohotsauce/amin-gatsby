@@ -375,7 +375,7 @@ a.btn2:hover {
 }
 
 .bgprojects {
-  background: url(/img/projects.jpg) no-repeat center bottom;
+  /* background: url(/img/projects.jpg) no-repeat center bottom; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

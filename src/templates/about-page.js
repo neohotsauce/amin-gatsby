@@ -16,7 +16,8 @@ export const AboutPageTemplate = ({
         style={{
           background: `url(${
             !banner.image.publicURL ? banner.image : banner.image.publicURL
-          }) no-repeat center center`
+          }) no-repeat center center`,
+          backgroundSize: "cover"
         }}
         className="topbanner bgabout"
       >
@@ -33,7 +34,8 @@ export const AboutPageTemplate = ({
             !overview.image.publicURL
               ? overview.image
               : overview.image.publicURL
-          }) no-repeat center bottom`
+          }) no-repeat center bottom`,
+          backgroundSize: "cover"
         }}
       >
         <div className="container">

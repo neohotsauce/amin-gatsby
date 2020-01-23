@@ -230,3 +230,36 @@ collections:
                   { label: Description, name: description, widget: text },
                 ],
             }
+      - file: "src/pages/projects.md"
+        label: "Projects Page"
+        name: "projects"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "projects-page",
+            }
+          - {
+              label: Banner,
+              name: banner,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Image, name: image, widget: image },
+                ],
+            }
+          - {
+              label: Projects,
+              name: projects,
+              widget: list,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Image, name: image, widget: image },
+                  { label: Client, name: client, widget: string },
+                  { label: Year, name: year, widget: string },
+                  { label: Type, name: type, widget: string },
+                ],
+            }
