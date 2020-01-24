@@ -62,10 +62,10 @@ const Navbar = ({ location }) => {
             </li>
             <li
               className={
-                pagePath === "development" ? "nav-item active" : "nav-item"
+                pagePath === "developments" ? "nav-item active" : "nav-item"
               }
             >
-              <Link className="nav-link" to="/development">
+              <Link className="nav-link" to="/developments">
                 Developments
               </Link>
             </li>

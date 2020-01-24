@@ -18,7 +18,7 @@ export const ProjectsPageTemplate = ({ banner, projects }) => {
   return (
     <Fragment>
       <div
-        class="topbanner bgprojects"
+        className="topbanner bgprojects"
         style={{
           background: `url(${
             !banner.image.publicURL ? banner.image : banner.image.publicURL
@@ -26,18 +26,18 @@ export const ProjectsPageTemplate = ({ banner, projects }) => {
           backgroundSize: "cover"
         }}
       >
-        <div class="d-flex align-items-center justify-content-center ">
-          <h2 class="white xl">{banner.title}</h2>
+        <div className="d-flex align-items-center justify-content-center ">
+          <h2 className="white xl">{banner.title}</h2>
         </div>
       </div>
 
-      <div class="block2 ">
-        <div class="container">
-          <div class="row px-3">
-            <div class="col-lg-12 col-xl-12 col-12 " align="center">
+      <div className="block2 ">
+        <div className="container">
+          <div className="row px-3">
+            <div className="col-lg-12 col-xl-12 col-12 " align="center">
               <div align="center">
                 <button
-                  class="btn btn-default filter-button mx-1"
+                  className="btn btn-default filter-button mx-1"
                   data-filter="all"
                 >
                   All
@@ -45,7 +45,7 @@ export const ProjectsPageTemplate = ({ banner, projects }) => {
                 {uniqueTypes.map((type, index) => (
                   <button
                     key={index}
-                    class="btn btn-default filter-button mx-1"
+                    className="btn btn-default filter-button mx-1"
                     data-filter={type.toLowerCase().replace(/\s/g, "")}
                   >
                     {type}
@@ -69,9 +69,9 @@ export const ProjectsPageTemplate = ({ banner, projects }) => {
                       ? project.image
                       : project.image.publicURL
                   }
-                  class="img-fluid news_image pb-3 pb-lg-4"
+                  className="img-fluid news_image pb-3 pb-lg-4"
                 />
-                <div class="pl-3 pl-lg-3">
+                <div className="pl-3 pl-lg-3">
                   <h4>{project.title}</h4>
                   <p align="left">
                     <span>Client: {project.client}</span>
