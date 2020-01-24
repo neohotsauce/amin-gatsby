@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-const Story = ({ location }) => (
-  <Layout location={location}>
+const Story = ({ location, pageContext }) => (
+  <Layout location={location} pageContext={pageContext}>
     <div className="block2 ">
       <div className="container">
         <div className="row px-3  ">
