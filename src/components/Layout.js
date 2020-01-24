@@ -11,7 +11,7 @@ import "./scrollbar.css";
 import "./animate.css";
 import "./style.css";
 
-const TemplateWrapper = ({ children, location }) => {
+const TemplateWrapper = ({ children, location, pageContext }) => {
   const { title, description } = useSiteMetadata();
 
   useEffect(() => {
@@ -147,7 +147,7 @@ const TemplateWrapper = ({ children, location }) => {
         />
         />
       </Helmet>
-      <Navbar location={location} />
+      <Navbar location={location} pageContext={pageContext} />
       <div>{children}</div>
       <Footer />
     </div>

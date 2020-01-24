@@ -140,10 +140,10 @@ export const AboutPageTemplate = ({
   );
 };
 
-const AboutPage = ({ data, location }) => {
+const AboutPage = ({ data, location, pageContext }) => {
   const { frontmatter } = data.markdownRemark;
   return (
-    <Layout location={location}>
+    <Layout location={location} pageContext={pageContext}>
       <AboutPageTemplate
         banner={frontmatter.banner}
         overview={frontmatter.overview}

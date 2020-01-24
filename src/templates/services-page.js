@@ -63,10 +63,10 @@ export const ServicesPageTemplate = ({ banner, services }) => {
   );
 };
 
-const ServicesPage = ({ data, location }) => {
+const ServicesPage = ({ data, location, pageContext }) => {
   const { frontmatter } = data.markdownRemark;
   return (
-    <Layout location={location}>
+    <Layout location={location} pageContext={pageContext}>
       <ServicesPageTemplate
         banner={frontmatter.banner}
         services={frontmatter.services}

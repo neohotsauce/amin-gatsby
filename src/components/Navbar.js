@@ -2,8 +2,10 @@ import React, { Fragment, useEffect, useState } from "react";
 import { Link } from "gatsby";
 import logo from "../img/logo.png";
 
-const Navbar = ({ location }) => {
+const Navbar = ({ location, pageContext }) => {
   const [pagePath, setPath] = useState("");
+
+  const page = pageContext.templateKey || { templateKey: null };
 
   useEffect(() => {
     setPath(location ? location.pathname.substr(1) : "404");
@@ -36,7 +38,11 @@ const Navbar = ({ location }) => {
               </Link>
             </li>
             <li
-              className={pagePath === "about" ? "nav-item active" : "nav-item"}
+              className={
+                pagePath === "about" || page === "about-page"
+                  ? "nav-item active"
+                  : "nav-item"
+              }
             >
               <Link className="nav-link" to="/about">
                 About
@@ -44,7 +50,9 @@ const Navbar = ({ location }) => {
             </li>
             <li
               className={
-                pagePath === "services" ? "nav-item active" : "nav-item"
+                pagePath === "services" || page === "services-page"
+                  ? "nav-item active"
+                  : "nav-item"
               }
             >
               <Link className="nav-link" to="/services">
@@ -53,7 +61,9 @@ const Navbar = ({ location }) => {
             </li>
             <li
               className={
-                pagePath === "projects" ? "nav-item active" : "nav-item"
+                pagePath === "projects" || page === "projects-page"
+                  ? "nav-item active"
+                  : "nav-item"
               }
             >
               <Link className="nav-link" to="/projects">
@@ -62,7 +72,11 @@ const Navbar = ({ location }) => {
             </li>
             <li
               className={
-                pagePath === "developments" ? "nav-item active" : "nav-item"
+                pagePath === "developments" ||
+                page === "development-post" ||
+                pagePath === "developments/"
+                  ? "nav-item active"
+                  : "nav-item"
               }
             >
               <Link className="nav-link" to="/developments">
@@ -70,7 +84,13 @@ const Navbar = ({ location }) => {
               </Link>
             </li>
             <li
-              className={pagePath === "news" ? "nav-item active" : "nav-item"}
+              className={
+                pagePath === "news" ||
+                pagePath === "news/" ||
+                page === "news-post"
+                  ? "nav-item active"
+                  : "nav-item"
+              }
             >
               <Link className="nav-link" to="news">
                 News
@@ -78,7 +98,9 @@ const Navbar = ({ location }) => {
             </li>
             <li
               className={
-                pagePath === "contact" ? "nav-item active" : "nav-item"
+                pagePath === "contact" || page === "contact-page"
+                  ? "nav-item active"
+                  : "nav-item"
               }
             >
               <Link className="nav-link" to="contact">

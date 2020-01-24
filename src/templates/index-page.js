@@ -190,11 +190,11 @@ IndexPageTemplate.propTypes = {
   banners: PropTypes.array
 };
 
-const IndexPage = ({ data, location }) => {
+const IndexPage = ({ data, location, pageContext }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout location={location}>
+    <Layout location={location} pageContext={pageContext}>
       <IndexPageTemplate
         mainpitch={frontmatter.mainpitch}
         banners={frontmatter.banners}

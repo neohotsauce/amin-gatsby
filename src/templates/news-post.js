@@ -1,19 +1,28 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import { graphql, Link } from "gatsby";
 
 import Layout from "../components/Layout";
 
-export const DevelopmentPostTemplate = ({
+export const NewsPostTemplate = ({
   content,
   title,
   featuredimage,
-  contentEditor
+  contentEditor,
+  date,
+  pageContext
 }) => {
+  useEffect(() => {
+    console.log(pageContext);
+  }, []);
+  const dateFormat = new Date(date);
+  const fullDate = `${String(dateFormat.getDate()).padStart(2, "0")}-${String(
+    dateFormat.getMonth() + 1
+  ).padStart(2, "0")}-${dateFormat.getFullYear()}`;
   return (
     <Fragment>
-      <div className="topbanner bgdev">
+      <div className="topbanner bgnews">
         <div className="d-flex align-items-center justify-content-center ">
-          <h2 className="white xl">DEVELOPMENTS</h2>
+          <h2 className="white xl">NEWS & MEDIA</h2>
         </div>
       </div>
 
@@ -22,6 +31,7 @@ export const DevelopmentPostTemplate = ({
           <div className="row px-3">
             <div className="col-12" align="center">
               <h1>{title}</h1>
+              <p>{fullDate}</p>
               <img
                 src={
                   !featuredimage.publicURL
@@ -39,12 +49,12 @@ export const DevelopmentPostTemplate = ({
                   dangerouslySetInnerHTML={{ __html: content }}
                 />
               ) : (
-                <p className="width75">{contentEditor}</p>
+                <div className="width75">{contentEditor}</div>
               )}
               <br /> <br />
-              <Link className="btn2" to="/developments">
+              <Link className="btn2" to="/news">
                 {" "}
-                More Developments{" "}
+                More News{" "}
               </Link>
             </div>
           </div>
@@ -54,28 +64,34 @@ export const DevelopmentPostTemplate = ({
   );
 };
 
-const DevelopmetnPage = ({ data, location, pageContext }) => {
-  const { markdownRemark: development } = data;
+const NewsPage = ({ data, location, pageContext }) => {
+  const { markdownRemark: news } = data;
   return (
-    <Layout pageContext={pageContext} location={location}>
-      <DevelopmentPostTemplate
-        content={development.html}
-        title={development.frontmatter.title}
-        featuredimage={development.frontmatter.featuredimage}
+    <Layout location={location} pageContext={pageContext}>
+      <NewsPostTemplate
+        location={location}
+        pageContext={pageContext}
+        content={news.html}
+        title={news.frontmatter.title}
+        description={news.frontmatter.description}
+        date={news.frontmatter.date}
+        featuredimage={news.frontmatter.featuredimage}
       />
     </Layout>
   );
 };
 
-export default DevelopmetnPage;
+export default NewsPage;
 
 export const pageQuery = graphql`
-  query DevelopmentPostByID($id: String!) {
+  query NewsPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
       frontmatter {
         title
+        description
+        date
         featuredimage {
           publicURL
         }

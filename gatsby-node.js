@@ -33,7 +33,7 @@ exports.createPages = ({ actions, graphql }) => {
     posts.forEach(edge => {
       const id = edge.node.id;
       if (!edge.node.frontmatter.templateKey) {
-        return null
+        return null;
       }
       return createPage({
         path: edge.node.fields.slug,
@@ -43,7 +43,8 @@ exports.createPages = ({ actions, graphql }) => {
         ),
         // additional data can be passed via context
         context: {
-          id
+          id,
+          templateKey: edge.node.frontmatter.templateKey
         }
       });
     });

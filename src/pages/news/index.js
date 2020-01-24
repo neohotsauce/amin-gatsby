@@ -3,32 +3,31 @@ import { graphql, Link } from "gatsby";
 
 import Layout from "../../components/Layout";
 
-export const DevelopmentsPageTemplate = ({ developments }) => {
+export const NewsPageTemplate = ({ news }) => {
   return (
     <Fragment>
-      <div className="topbanner bgdev">
+      <div className="topbanner bgnews">
         <div className="d-flex align-items-center justify-content-center ">
-          <h2 className="white xl">OUR DEVELOPMENTS</h2>
+          <h2 className="white xl">NEWS & MEDIA</h2>
         </div>
       </div>
 
       <div className="block2 ">
         <div className="container">
           <div className="row px-3">
-            {developments.map(development => {
+            {news.map(item => {
               const {
                 title,
-                year,
-                featuredimage,
-                type
-              } = development.node.frontmatter;
+                description,
+                featuredimage
+              } = item.node.frontmatter;
               return (
                 <div
-                  key={development.node.fields.slug}
                   className="col-lg-4 col-xl-4 col-sm-6 col-12 pb-3 pb-xl-5"
                   align="center"
+                  key={item.node.fields.slug}
                 >
-                  <Link to={development.node.fields.slug}>
+                  <Link to={item.node.fields.slug}>
                     <img
                       src={
                         !featuredimage.publicURL
@@ -39,14 +38,10 @@ export const DevelopmentsPageTemplate = ({ developments }) => {
                       align="center"
                     />
                     <br />
-                    <h4 align="left" className="pb-2">
+                    <h3 align="left" className="pb-2">
                       {title}
-                    </h4>
-                    <p align="left">
-                      <span>Year: {year}</span>
-                      <br />
-                      <span>Type: {type}</span>
-                    </p>
+                    </h3>
+                    <p align="left">{description}</p>
                   </Link>
                 </div>
               );
@@ -58,29 +53,27 @@ export const DevelopmentsPageTemplate = ({ developments }) => {
   );
 };
 
-const DevelopmentsPage = ({ data, location, pageContext }) => {
+const NewsPage = ({ data, location, pageContext }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout location={location} pageContext={pageContext}>
-      <DevelopmentsPageTemplate developments={edges} />
+      <NewsPageTemplate news={edges} />
     </Layout>
   );
 };
 
-export default DevelopmentsPage;
+export default NewsPage;
 
 export const pageQuery = graphql`
-  query DevelopmentsPageTemplate {
+  query NewsPageTemplate {
     allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "development-post" } } }
+      filter: { frontmatter: { templateKey: { eq: "news-post" } } }
     ) {
       edges {
         node {
           frontmatter {
-            date
             title
-            type
-            year
+            description
             featuredimage {
               publicURL
             }

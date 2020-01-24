@@ -248,7 +248,7 @@ collections:
                 ],
             }
   - name: "developments"
-    label: "Developments"
+    label: "Development"
     folder: "src/pages/developments"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -262,6 +262,23 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Type", name: "type", widget: "string" }
       - { label: Year, name: year, widget: string }
-      - { label: "Publish Date", name: "date", widget: "hidden" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "news"
+    label: "News"
+    folder: "src/pages/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "news-post",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }

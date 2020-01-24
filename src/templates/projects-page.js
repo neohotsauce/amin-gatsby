@@ -90,10 +90,10 @@ export const ProjectsPageTemplate = ({ banner, projects }) => {
   );
 };
 
-const ProjectsPage = ({ data, location }) => {
+const ProjectsPage = ({ data, location, pageContext }) => {
   const { frontmatter } = data.markdownRemark;
   return (
-    <Layout location={location}>
+    <Layout location={location} pageContext={pageContext}>
       <ProjectsPageTemplate
         banner={frontmatter.banner}
         projects={frontmatter.projects}
