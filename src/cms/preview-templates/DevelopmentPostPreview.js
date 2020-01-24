@@ -9,7 +9,7 @@ const DevelopmentPostPreview = ({ entry, widgetFor }) => {
     <DevelopmentPostTemplate
       contentEditor={widgetFor("body")}
       title={entry.getIn(["data", "title"])}
-      featuredimage={entry.getIn(["data", "featuredimage"])}
+      featuredimage={entry.getIn(["data", "featuredimage"]) || {}}
     />
   );
 };

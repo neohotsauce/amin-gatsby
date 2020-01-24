@@ -32,10 +32,11 @@ export const DevelopmentPostTemplate = ({
                 }
                 width="75%"
                 className="py-5"
+                alt="Featured image"
               />
               <br />
               {!contentEditor ? (
-                <p
+                <div
                   className="width75"
                   dangerouslySetInnerHTML={{ __html: content }}
                 />
