@@ -88,6 +88,22 @@ h4 {
   }
 }
 
+/* mobile view */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    background-color: #000;
+    border-top: 3px solid #30e290;
+    color: #fff;
+    z-index: 1;
+    margin-top: 5px;
+  }
+  .navbar-nav .nav-item .nav-link {
+    padding: 0.7em 1em !important;
+    font-size: 100%;
+    font-weight: 500;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .extralarge {
     font-size: 35px;
@@ -110,6 +126,11 @@ h4 {
   font-size: 25px;
   font-weight: 700;
   letter-spacing: 0.1em;
+}
+
+.collapsing {
+  -webkit-transition: height 0.5s ease !important;
+  transition: height 0.5s ease !important;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -149,21 +170,7 @@ nav {
 .navbar-dark .navbar-nav .show > .nav-link {
   color: #30e290;
 }
-/* mobile view */
-@media (max-width: 500px) {
-  .navbar-nav {
-    background-color: #000;
-    border-top: 3px solid #30e290;
-    color: #fff;
-    z-index: 1;
-    margin-top: 5px;
-  }
-  .navbar-nav .nav-item .nav-link {
-    padding: 0.7em 1em !important;
-    font-size: 100%;
-    font-weight: 500;
-  }
-}
+
 /***************************************************** Carousel****************************************************/
 
 .carousel-caption h1 {
