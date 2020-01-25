@@ -10,6 +10,9 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+site_url: https://amin-gatsby.netlify.com
+display_url: https://amin-gatsby.netlify.com
+logo_url: https://amin-gatsby.netlify.com/static/logo_green-6c07d8e8c4f2a0a33e69040fcfce90b2.png
 
 collections:
   - name: "pages"
