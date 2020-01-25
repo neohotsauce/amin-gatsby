@@ -247,6 +247,63 @@ collections:
                   { label: Type, name: type, widget: string },
                 ],
             }
+      - file: "src/pages/contact.md"
+        label: "Contact Page"
+        name: "contact"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "contact-page",
+            }
+          - {
+              label: Banner,
+              name: banner,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Image, name: image, widget: image },
+                ],
+            }
+          - {
+              label: Head Office,
+              name: headoffice,
+              widget: object,
+              fields:
+                [
+                  { label: Logo, name: logo, widget: image },
+                  {
+                    label: Address,
+                    name: address,
+                    widget: text,
+                    required: false,
+                  },
+                  { label: Phone, name: phone, widget: string },
+                  { label: Facsimile, name: facsimile, widget: string },
+                  { label: Email, name: email, widget: string },
+                ],
+            }
+          - {
+              label: Companies,
+              name: companies,
+              widget: list,
+              fields:
+                [
+                  { label: Name, name: name, widget: string },
+                  { label: Logo, name: logo, widget: image },
+                  {
+                    label: Address,
+                    name: address,
+                    widget: text,
+                    required: false,
+                  },
+                  { label: Phone, name: phone, widget: string },
+                  { label: Facsimile, name: facsimile, widget: string },
+                  { label: Email, name: email, widget: string },
+                ],
+            }
   - name: "developments"
     label: "Development"
     folder: "src/pages/developments"

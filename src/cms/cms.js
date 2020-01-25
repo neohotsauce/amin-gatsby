@@ -8,6 +8,7 @@ import ServicesPagePreview from "./preview-templates/ServicesPagePreview";
 import ProjectsPagePreview from "./preview-templates/ProjectsPagePreview";
 import DevelopmentPostPreview from "./preview-templates/DevelopmentPostPreview";
 import NewsPostPreview from "./preview-templates/NewsPostPreview";
+import ContactPagePreview from "./preview-templates/ContactPagePreview";
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
@@ -18,3 +19,4 @@ CMS.registerPreviewTemplate("services", ServicesPagePreview);
 CMS.registerPreviewTemplate("projects", ProjectsPagePreview);
 CMS.registerPreviewTemplate("developments", DevelopmentPostPreview);
 CMS.registerPreviewTemplate("news", NewsPostPreview);
+CMS.registerPreviewTemplate("contact", ContactPagePreview);
