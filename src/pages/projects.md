@@ -1,62 +1,68 @@
 ---
 templateKey: projects-page
 banner:
-  title: >
-    PROJECTS THAT MATTER.
   image: /img/projects.jpg
+  title: |
+    PROJECTS THAT MATTER.
 projects:
-  - title: >
-      Grandpark Kodhipparu
-    image: /img/n1.jpg
-    client: >
+  - client: |
       Park Hyatt
-    year: >
-      2018
-    type: >
-      Resort Development
-  - title: >
-      Amin Avenue
-    image: /img/n2.jpg
-    client: >
-      Amin Construction
-    year: >
-      2018
-    type: >
-      Residential
-  - title: >
-      FahiHiyaa Housing Units
-    image: /img/n3.jpg
-    client: >
-      Planning Ministry
-    year: >
-      2018
-    type: >
-      Housing Units
-  - title: >
-      Grandpark Kodhipparu
-    image: /img/n3.jpg
-    client: >
-      Park Hyatt
-    year: >
-      2018
-    type: >
-      Resort Development
-  - title: >
-      Amin Avenue
     image: /img/n1.jpg
-    client: >
+    title: |
+      Grandpark Kodhipparu
+    type: |
+      Resort Development
+    year: |
+      2018
+  - client: |
       Amin Construction
-    year: >
-      2018
-    type: >
-      Residential
-  - title: >
-      FahiHiyaa Housing Units
     image: /img/n2.jpg
-    client: >
-      Planning Ministry
-    year: >
+    title: |
+      Amin Avenue
+    type: |
+      Residential
+    year: |
       2018
-    type: >
+  - client: |
+      Planning Ministry
+    image: /img/n3.jpg
+    title: |
+      FahiHiyaa Housing Units
+    type: |
       Housing Units
+    year: |
+      2018
+  - client: |
+      Park Hyatt
+    image: /img/n3.jpg
+    title: |
+      Grandpark Kodhipparu
+    type: |
+      Resort Development
+    year: |
+      2018
+  - client: |
+      Amin Construction
+    image: /img/n1.jpg
+    title: |
+      Amin Avenue
+    type: |
+      Residential
+    year: |
+      2018
+  - client: |
+      Planning Ministry
+    image: /img/n2.jpg
+    title: |
+      FahiHiyaa Housing Units
+    type: |
+      Housing Units
+    year: |
+      2018
+  - client: 'Amin Buildware '
+    image: /img/n1.jpg
+    title: 'Amin avenue '
+    type: 'Residential '
+    year: '2018'
 ---
+
