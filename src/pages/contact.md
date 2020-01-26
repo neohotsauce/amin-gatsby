@@ -23,7 +23,7 @@ companies:
     phone: (960) 334900
     facsimile: (960) 3328424
     email: rahman@amin.com.mv
-  - name: AMIN BUILDWARE
+  - name: AMIN MARINE
     logo: /img/logo_3.jpg
     address:
     phone: (960) 3343000

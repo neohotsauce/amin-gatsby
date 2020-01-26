@@ -91,7 +91,7 @@ export const IndexPageTemplate = ({
             <div className="col-lg-8 col-xl-8 col-12">
               <p>{mainpitch.description}</p>
               <br />
-              <Link className="btn1" to="about.html">
+              <Link className="btn1" to="/about">
                 LEARN MORE...{" "}
               </Link>
             </div>

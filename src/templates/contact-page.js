@@ -105,10 +105,10 @@ export const ContactPageTemplate = ({ banner, headoffice, companies }) => {
             {companies.map((company, index) => (
               <div
                 key={index}
-                className="col-lg-3 col-xl-3 col-sm-6 col-6"
+                className="col-lg-4 col-xl-3 col-sm-6 col-12"
                 align="center"
               >
-                <h2>AMIN BUILDWARE</h2>
+                <h3>{company.name}</h3>
                 <br />
                 <img
                   src={
