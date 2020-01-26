@@ -1,32 +1,38 @@
 ---
 templateKey: contact-page
 banner:
-  title: >
-    CONTACT US
   image: /img/contact.jpg
+  title: |
+    CONTACT US
 headoffice:
-  logo: /img/logo_green.png
-  address: >
+  address: |
     World Dream - 2nd Floor,
         Handhuvaree Hingung , Male' - 20311
         Rep of Maldives
-  phone: (960) 334900
-  facsimile: (960) 3328424
   email: rahman@amin.com.mv
+  facsimile: (960) 3328424
+  logo: /img/logo_green.png
+  phone: (960) 334900
 companies:
-  - name: AMIN BUILDWARE
-    logo: /img/logo_2.jpg
-    address: >
+  - address: |
       52, Boduthakurufaanu magu
           Maafanu, Male' - 20279
           Rep of Maldives
-    phone: (960) 334900
-    facsimile: (960) 3328424
     email: rahman@amin.com.mv
-  - name: AMIN MARINE
-    logo: /img/logo_3.jpg
-    address:
-    phone: (960) 3343000
     facsimile: (960) 3328424
-    email: operations@amin.com.mv
+    logo: /img/logo_2.jpg
+    name: AMIN BUILDWARE
+    phone: (960) 334900
+  - email: operations@amin.com.mv
+    facsimile: (960) 3328424
+    logo: /img/logo_3.jpg
+    name: AMIN MARINE
+    phone: (960) 3343000
+  - address: sdafasdfsd
+    email: info@amingiri.com
+    facsimile: '9112349'
+    logo: /img/logo_2.jpg
+    name: Amingiri Investment
+    phone: '9112393'
 ---
+
