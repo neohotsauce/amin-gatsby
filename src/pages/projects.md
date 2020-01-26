@@ -46,10 +46,8 @@ projects:
     image: /img/n1.jpg
     title: |
       Amin Avenue
-    type: |
-      Residential
-    year: |
-      2018
+    type: Housing Units
+    year: '2020'
   - client: |
       Planning Ministry
     image: /img/n2.jpg
