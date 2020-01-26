@@ -35,7 +35,7 @@ servicesIntro:
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
     non proident, sunt in culpa qui officia deserunt mollit anim id est
     laborum."
-  image: /img/imageInput-1579011670977.png
+  image: /img/building.png
   title:
     mainPhrase: |
       SOLUTION
