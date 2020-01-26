@@ -62,5 +62,10 @@ projects:
     title: 'Amin avenue '
     type: 'Residential '
     year: '2018'
+  - client: Test client
+    image: /img/bg1.jpg
+    title: Test
+    type: Test
+    year: '2222'
 ---
 
