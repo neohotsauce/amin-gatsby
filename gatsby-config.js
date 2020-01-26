@@ -35,6 +35,12 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingID: 'UA-156906518-1'
+      }
+    },
+    {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
       options: {
