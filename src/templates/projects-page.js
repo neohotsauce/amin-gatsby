@@ -7,13 +7,17 @@ export const ProjectsPageTemplate = ({ banner, projects }) => {
   const types = projects.map(project => {
     return project.type;
   });
-  const uniqueTypes = types.reduce(
-    (unique, item) =>
-      unique.map(u => u.toLowerCase()).includes(item.toLowerCase())
-        ? unique
-        : [...unique, item],
-    []
-  );
+
+  const uniqueTypes = types.reduce((unique, item) => {
+    if (item === undefined) {
+      return [];
+    }
+    return unique
+      .map(u => (u ? u.toLowerCase().replace(/\s/g, "") : null))
+      .includes(item ? item.toLowerCase().replace(/\s/g, "") : null)
+      ? unique
+      : [...unique, item];
+  }, []);
 
   return (
     <Fragment>
@@ -46,7 +50,9 @@ export const ProjectsPageTemplate = ({ banner, projects }) => {
                   <button
                     key={index}
                     className="btn btn-default filter-button mx-1"
-                    data-filter={type.toLowerCase().replace(/\s/g, "")}
+                    data-filter={
+                      type ? type.toLowerCase().replace(/\s/g, "") : null
+                    }
                   >
                     {type}
                   </button>
@@ -59,18 +65,29 @@ export const ProjectsPageTemplate = ({ banner, projects }) => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className={`col-lg-4 col-md-4 col-sm-6 col-12 filter pb-3 pb-lg-4 ${project.type
-                  .toLowerCase()
-                  .replace(/\s/g, "")}`}
+                className={`col-lg-4 col-md-4 col-sm-6 col-12 filter pb-3 pb-lg-4 ${
+                  project.type
+                    ? project.type.toLowerCase().replace(/\s/g, "")
+                    : null
+                }`}
               >
-                <img
-                  src={
-                    !project.image.publicURL
-                      ? project.image
-                      : project.image.publicURL
-                  }
-                  className="img-fluid news_image pb-3 pb-lg-4"
-                />
+                {project.image ? (
+                  <img
+                    src={
+                      !project.image.publicURL
+                        ? project.image
+                        : project.image.publicURL
+                    }
+                    className="img-fluid news_image pb-3 pb-lg-4"
+                  />
+                ) : (
+                  <img
+                    src={null}
+                    className="img-fluid news_image pb-3 pb-lg-4"
+                    alt="image"
+                  />
+                )}
+
                 <div className="pl-3 pl-lg-3">
                   <h4>{project.title}</h4>
                   <p align="left">

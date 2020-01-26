@@ -110,14 +110,18 @@ export const ContactPageTemplate = ({ banner, headoffice, companies }) => {
               >
                 <h3>{company.name}</h3>
                 <br />
-                <img
-                  src={
-                    !company.logo.publicURL
-                      ? company.logo
-                      : company.logo.publicURL
-                  }
-                  className="img-fluid"
-                />
+                {company.logo ? (
+                  <img
+                    src={
+                      !company.logo.publicURL
+                        ? company.logo
+                        : company.logo.publicURL
+                    }
+                    className="img-fluid"
+                  />
+                ) : (
+                  <img src={null} className="img-fluid" alt="logo" />
+                )}
                 <br /> <br />
                 {company.address ? (
                   <p style={{ whiteSpace: "pre-line" }}>{company.address}</p>

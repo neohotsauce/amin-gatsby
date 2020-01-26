@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
@@ -36,14 +36,22 @@ export const ServicesPageTemplate = ({ banner, services }) => {
                     className="col-lg-6 col-xl-6 col-sm-6 col-12 "
                     align="center"
                   >
-                    <img
-                      src={
-                        !service.image.publicURL
-                          ? service.image
-                          : service.image.publicURL
-                      }
-                      className="img-fluid"
-                    />
+                    {service.image ? (
+                      <img
+                        src={
+                          !service.image.publicURL
+                            ? service.image
+                            : service.image.publicURL
+                        }
+                        className="img-fluid"
+                      />
+                    ) : (
+                      <img
+                        src={null}
+                        className="img-fluid"
+                        alt="image preview"
+                      />
+                    )}
                   </div>
                   <div
                     className="col-lg-6 col-xl-6 col-sm-6 col-12 pt-2"

@@ -407,7 +407,8 @@ a.btn2:hover {
 
 .news_image {
   max-width: 100%;
-  height: auto;
+  height: 292px;
+  object-fit: cover;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;

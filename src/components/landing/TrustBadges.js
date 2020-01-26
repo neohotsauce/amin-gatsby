@@ -13,15 +13,19 @@ const TrustBadges = ({ badges }) => {
             <div className="row justify-content-center">
               {badges.map((badge, index) => (
                 <div key={index} className="col-lg-3 col-md-4 col-6">
-                  <img
-                    src={
-                      !badge.image.publicURL
-                        ? badge.image
-                        : badge.image.publicURL
-                    }
-                    alt=""
-                    className="img-fluid"
-                  />
+                  {badge.image ? (
+                    <img
+                      src={
+                        !badge.image.publicURL
+                          ? badge.image
+                          : badge.image.publicURL
+                      }
+                      alt=""
+                      className="img-fluid"
+                    />
+                  ) : (
+                    <img src={null} alt="badge" className="img-fluid" />
+                  )}
                 </div>
               ))}
             </div>

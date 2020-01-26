@@ -25,15 +25,20 @@ const BannerRoll = ({ banners }) => {
               data-interval="10000"
               key={index}
             >
-              {!banner.image.publicURL ? (
-                <img src={banner.image} className="d-block w-100" alt="..." />
-              ) : (
+              {banner.image ? (
                 <img
-                  src={banner.image.publicURL}
+                  src={
+                    !banner.image.publicURL
+                      ? banner.image
+                      : banner.image.publicURL
+                  }
                   className="d-block w-100"
                   alt="..."
                 />
+              ) : (
+                <img src={null} className="d-block w-100" alt="banner" />
               )}
+
               <div className="carousel-caption d-flex h-100 align-items-center justify-content-center">
                 <h1>{banner.text}</h1>
               </div>

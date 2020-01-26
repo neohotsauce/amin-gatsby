@@ -125,12 +125,18 @@ export const AboutPageTemplate = ({
                 className="col-lg-3 col-xl-3 col-sm-3 col-12 "
                 align="left"
               >
-                <img
-                  src={
-                    !badge.image.publicURL ? badge.image : badge.image.publicURL
-                  }
-                  className="img-fluid"
-                />
+                {badge.image ? (
+                  <img
+                    src={
+                      !badge.image.publicURL
+                        ? badge.image
+                        : badge.image.publicURL
+                    }
+                    className="img-fluid"
+                  />
+                ) : (
+                  <img src={null} className="img-fluid" alt="badge" />
+                )}
               </div>
             ))}
           </div>

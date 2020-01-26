@@ -20,14 +20,18 @@ const Companies = ({ companies }) => {
             >
               <a href="#">
                 {" "}
-                <img
-                  src={
-                    !company.image.publicURL
-                      ? company.image
-                      : company.image.publicURL
-                  }
-                  width="120px"
-                />{" "}
+                {company.image ? (
+                  <img
+                    src={
+                      !company.image.publicURL
+                        ? company.image
+                        : company.image.publicURL
+                    }
+                    width="120px"
+                  />
+                ) : (
+                  <img src={null} width="120px" alt="company logo" />
+                )}{" "}
               </a>
             </div>
           ))}

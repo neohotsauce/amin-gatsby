@@ -15,10 +15,21 @@ const Achievements = ({ achievements }) => {
         <div className="row px-3">
           {achievements.map((item, index) => (
             <div key={index} className="col-6 col-lg-3 col-xl-3 ">
-              <img
-                src={!item.image.publicURL ? item.image : item.image.publicURL}
-                className="img-fluid mb-3 mb-lg-4"
-              />
+              {item.image ? (
+                <img
+                  src={
+                    !item.image.publicURL ? item.image : item.image.publicURL
+                  }
+                  className="img-fluid mb-3 mb-lg-4"
+                />
+              ) : (
+                <img
+                  src={null}
+                  className="img-fluid mb-3 mb-lg-4"
+                  alt="award"
+                />
+              )}
+
               <h4>{item.title}</h4>
               <p>{item.description}</p>
             </div>
