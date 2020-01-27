@@ -58,22 +58,8 @@ projectsIntro:
     subPhrase: |
       PROJECTS
         THAT
-trustBadges:
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-achievements:
-  - description: |
-      The Srilanka Beuro of Foreign Investment
-    image: /img/award1.jpg
-    title: |
-      4 Star Employment Agency
 companies:
   - image: /img/logo_2.jpg
     name: |
       Amin buildware
 ---
-

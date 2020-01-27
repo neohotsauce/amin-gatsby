@@ -69,7 +69,7 @@ export const ContactPageTemplate = ({ banner, headoffice, companies }) => {
         }}
       >
         <div className="d-flex align-items-center justify-content-center ">
-          <h2 className="white xl">CONTACT US</h2>
+          <h2 className="white xl">{banner.title}</h2>
         </div>
       </div>
 

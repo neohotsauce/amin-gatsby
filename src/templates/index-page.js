@@ -1,7 +1,6 @@
 import React, { useState, createRef } from "react";
 import PropTypes from "prop-types";
-import { Link, graphql, navigate } from "gatsby";
-import Recaptcha from "react-google-recaptcha";
+import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 
 import BannerRoll from "../components/landing/BannerRoll";
@@ -20,61 +19,6 @@ export const IndexPageTemplate = ({
   achievements,
   companies
 }) => {
-  const recaptchaRef = createRef();
-
-  const RECAPTCHA_KEY =
-    process.env.GATSBY_APP_SITE_RECAPTCHA_KEY ||
-    "6LfCztAUAAAAADAKPuYnzzgSWX-FelwcnjPSbyko";
-  const encode = data => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  };
-
-  const [state, setState] = useState({
-    name: "",
-    email: "",
-    messagecontent: ""
-  });
-  const { name, email, messagecontent } = state;
-
-  const handleChange = e => {
-    setState({ ...state, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async e => {
-    e.preventDefault();
-    const form = e.target;
-    const recaptchaValue = recaptchaRef.current.getValue();
-    if (!recaptchaValue) {
-      return alert(
-        "Please confirm that you are not a robot by filling the reCAPTCHA"
-      );
-    }
-    try {
-      await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({
-          "form-name": form.getAttribute("name"),
-          "g-recaptcha-response": recaptchaValue,
-          ...state
-        })
-      });
-      navigate(form.getAttribute("action"));
-      alert(
-        "Thank you!\nYour message has been successfully sent. We will contact you very soon!"
-      );
-      return setState({
-        name: "",
-        email: "",
-        messagecontent: ""
-      });
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   return (
     <div>
       {/* banners goes below */}
@@ -191,19 +135,21 @@ IndexPageTemplate.propTypes = {
 };
 
 const IndexPage = ({ data, location, pageContext }) => {
-  const { frontmatter } = data.markdownRemark;
+  const { frontmatter: landing } = data.landing;
+  const { frontmatter: brands } = data.brands;
+  const { frontmatter: achievements } = data.achievements;
 
   return (
     <Layout location={location} pageContext={pageContext}>
       <IndexPageTemplate
-        mainpitch={frontmatter.mainpitch}
-        banners={frontmatter.banners}
-        stats={frontmatter.stats}
-        servicesIntro={frontmatter.servicesIntro}
-        projectsIntro={frontmatter.projectsIntro}
-        badges={frontmatter.trustBadges}
-        achievements={frontmatter.achievements}
-        companies={frontmatter.companies}
+        mainpitch={landing.mainpitch}
+        banners={landing.banners}
+        stats={landing.stats}
+        servicesIntro={landing.servicesIntro}
+        projectsIntro={landing.projectsIntro}
+        badges={brands.brands}
+        achievements={achievements.achievements}
+        companies={landing.companies}
       />
     </Layout>
   );
@@ -221,7 +167,9 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+    landing: markdownRemark(
+      frontmatter: { templateKey: { eq: "index-page" } }
+    ) {
       frontmatter {
         banners {
           image {
@@ -257,22 +205,46 @@ export const pageQuery = graphql`
             publicURL
           }
         }
-        trustBadges {
+        companies {
+          image {
+            publicURL
+          }
+        }
+      }
+    }
+    brands: markdownRemark(
+      frontmatter: { templateKey: { eq: "brands-page" } }
+    ) {
+      frontmatter {
+        banner {
+          title
+          image {
+            publicURL
+          }
+        }
+        brands {
+          image {
+            publicURL
+          }
+        }
+      }
+    }
+    achievements: markdownRemark(
+      frontmatter: { templateKey: { eq: "achievements-page" } }
+    ) {
+      frontmatter {
+        banner {
+          title
           image {
             publicURL
           }
         }
         achievements {
-          title
+          image {
+            publicURL
+          }
           description
-          image {
-            publicURL
-          }
-        }
-        companies {
-          image {
-            publicURL
-          }
+          title
         }
       }
     }

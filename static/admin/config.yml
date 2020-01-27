@@ -99,23 +99,6 @@ collections:
                 ],
             }
           - {
-              label: Trust badges,
-              name: trustBadges,
-              widget: list,
-              fields: [{ label: Image, name: image, widget: image }],
-            }
-          - {
-              label: Achievements,
-              name: achievements,
-              widget: list,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: string },
-                  { label: Image, name: image, widget: image },
-                ],
-            }
-          - {
               label: Companies,
               name: companies,
               widget: list,
@@ -248,6 +231,63 @@ collections:
                   { label: Client, name: client, widget: string },
                   { label: Year, name: year, widget: string },
                   { label: Type, name: type, widget: string },
+                ],
+            }
+      - file: "src/pages/brands.md"
+        label: "Trusted Brands Page"
+        name: "brands"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "brands-page",
+            }
+          - {
+              label: Banner,
+              name: banner,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Image, name: image, widget: image },
+                ],
+            }
+          - {
+              label: Brands,
+              name: brands,
+              widget: list,
+              fields: [{ label: Image, name: image, widget: image }],
+            }
+      - file: "src/pages/achievements.md"
+        label: "Achievements Page"
+        name: "achievements"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "achievements-page",
+            }
+          - {
+              label: Banner,
+              name: banner,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Image, name: image, widget: image },
+                ],
+            }
+          - {
+              label: Achievements,
+              name: achievements,
+              widget: list,
+              fields:
+                [
+                  { label: Image, name: image, widget: image },
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: text },
                 ],
             }
       - file: "src/pages/contact.md"

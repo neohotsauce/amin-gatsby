@@ -13,7 +13,7 @@ const IndexPagePreview = ({ entry, getAsset, widgetFor }) => {
         stats={data.stats || []}
         servicesIntro={data.servicesIntro || {}}
         projectsIntro={data.projectsIntro || {}}
-        badges={data.trustBadges || []}
+        badges={data.brands || []}
         achievements={data.achievements || []}
         companies={data.companies || []}
       />
