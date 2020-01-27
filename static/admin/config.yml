@@ -233,7 +233,7 @@ collections:
                   { label: Type, name: type, widget: string },
                 ],
             }
-      - file: "src/pages/brands.md"
+      - file: "src/pages/trusted-brands.md"
         label: "Trusted Brands Page"
         name: "brands"
         fields:
