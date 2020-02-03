@@ -49,5 +49,10 @@ projects:
     title: Soneva fushi
     type: Housing Units
     year: '2017'
+  - client: Abdulla
+    image: /img/chairman.png
+    title: 'Hahaha '
+    type: Residential
+    year: ' 2020'
 ---
 
