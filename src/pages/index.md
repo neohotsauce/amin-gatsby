@@ -26,6 +26,8 @@ stats:
     title: |
       Projects
         Completed
+  - info: '1500'
+    title: Number of Staffs
 servicesIntro:
   description: >
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -63,3 +65,4 @@ companies:
     name: |
       Amin buildware
 ---
+
