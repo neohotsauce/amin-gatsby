@@ -28,6 +28,8 @@ stats:
         Completed
   - info: '1500'
     title: Number of Staffs
+  - info: '124'
+    title: Worked at
 servicesIntro:
   description: >
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
