@@ -5,19 +5,6 @@ banner:
   title: |
     TRUSTED BY THE PROS
 brands:
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
-  - image: /img/bahrain-bay.png
+  - image: /img/Logo_39.png
 ---
+
