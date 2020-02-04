@@ -9,5 +9,10 @@ projects:
     title: Hulhumale Neighbourhood Grade 1-12 School
     type: Schools
     year: '2014'
+  - client: The Residency
+    image: /img/85665079.jpg
+    title: Vommuli Resort
+    type: Resort
+    year: '2012'
 ---
 
