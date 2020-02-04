@@ -16,24 +16,29 @@ banners:
       IN COMPLEX ENVIRONMENT
 mainpitch:
   description: >-
-    "Lo ipssdf dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-    non proident, sunt in culpa qui officia deserunt mollit anim id est
-    laborum."
-  title: ESTABLISHED BY TRUSTEE
+    AMIN Construction Pvt. Ltd previously known as Amin Carpentry Maldives Pvt
+    Ltd. established in the year 1984 and is registered as a limited liability
+    company for civil construction, carpentry work and wholesale trading
+    business. Major civil and construction projects started in the year 1987,
+    named as Felivaru upgrading project, consisting of factory buildings. 
+  title: ESTABLISHED BY TRUST.
 stats:
-  - info: |
-      206
+  - info: '1984'
     title: |
+      Year 
+      Established
+  - info: '630'
+    title: |-
       Projects
-        Completed
-  - info: '1500'
-    title: Number of Staffs
-  - info: '124'
-    title: Worked at
+      Completed
+  - info: '870'
+    title: |-
+      Contractors 
+      Appointed
+  - info: '26'
+    title: |-
+      Awards 
+      Won
 servicesIntro:
   description: >
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
