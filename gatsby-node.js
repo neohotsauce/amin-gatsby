@@ -1,5 +1,6 @@
 const _ = require("lodash");
 const path = require("path");
+// const axios = require("axios");
 const { createFilePath } = require("gatsby-source-filesystem");
 const { fmImagesToRelative } = require("gatsby-remark-relative-images");
 
@@ -64,3 +65,36 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     });
   }
 };
+
+// exports.sourceNodes = async ({
+//   actions,
+//   createNodeId,
+//   createContentDigest
+// }) => {
+//   const { createNode } = actions;
+//   // Create nodes here, generally by downloading data
+//   // from a remote API.
+//   const data = await axios.get(
+//     "https://randomapi.com/api/6de6abfedb24f889e0b5f675edc50deb?fmt=raw&sole"
+//   );
+//   // Process data into nodes.
+//   data.data.forEach(datum => {
+//     datum.image = "https://excorp.mv/img/small2.jpg";
+//     const nodeContent = JSON.stringify(datum);
+//     const nodeMeta = {
+//       id: createNodeId(`my-data-${datum.email}`),
+//       parent: null,
+//       children: [],
+//       internal: {
+//         type: `MyNodeType`,
+//         mediaType: `text/html`,
+//         content: nodeContent,
+//         contentDigest: createContentDigest(datum)
+//       }
+//     };
+//     const node = Object.assign({}, datum, nodeMeta);
+//     return createNode(node);
+//   });
+//   // We're done, return.
+//   return;
+// };

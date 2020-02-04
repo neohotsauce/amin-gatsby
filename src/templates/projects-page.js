@@ -62,44 +62,46 @@ export const ProjectsPageTemplate = ({ banner, projects }) => {
               <br />
             </div>
 
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className={`col-lg-4 col-md-4 col-sm-6 col-12 filter pb-3 pb-lg-4 ${
-                  project.type
-                    ? project.type.toLowerCase().replace(/\s/g, "")
-                    : null
-                }`}
-              >
-                {project.image ? (
-                  <img
-                    src={
-                      !project.image.publicURL
-                        ? project.image
-                        : project.image.publicURL
-                    }
-                    className="img-fluid news_image pb-3 pb-lg-4"
-                  />
-                ) : (
-                  <img
-                    src={null}
-                    className="img-fluid news_image pb-3 pb-lg-4"
-                    alt="image"
-                  />
-                )}
+            {projects
+              .sort((a, b) => b.year - a.year)
+              .map((project, index) => (
+                <div
+                  key={index}
+                  className={`col-lg-4 col-md-4 col-sm-6 col-12 filter pb-3 pb-lg-4 ${
+                    project.type
+                      ? project.type.toLowerCase().replace(/\s/g, "")
+                      : null
+                  }`}
+                >
+                  {project.image ? (
+                    <img
+                      src={
+                        !project.image.publicURL
+                          ? project.image
+                          : project.image.publicURL
+                      }
+                      className="img-fluid news_image pb-3 pb-lg-4"
+                    />
+                  ) : (
+                    <img
+                      src={null}
+                      className="img-fluid news_image pb-3 pb-lg-4"
+                      alt="image"
+                    />
+                  )}
 
-                <div className="pl-3 pl-lg-3">
-                  <h4>{project.title}</h4>
-                  <p align="left">
-                    <span>Client: {project.client}</span>
-                    <br />
-                    <span>{project.year}</span>
-                    <br />
-                    <span>Type: {project.type}</span>
-                  </p>
+                  <div className="pl-3 pl-lg-3">
+                    <h4>{project.title}</h4>
+                    <p align="left">
+                      <span>Client: {project.client}</span>
+                      <br />
+                      <span>{project.year}</span>
+                      <br />
+                      <span>Type: {project.type}</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </div>
