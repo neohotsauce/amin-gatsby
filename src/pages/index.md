@@ -54,13 +54,9 @@ servicesIntro:
        YOUR BUILDING.
 projectsIntro:
   description: >
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-    non proident, sunt in culpa qui officia deserunt mollit anim id est
-    laborum."
+    Our mission is to provide excellent service to our clients by listening to
+    their dreams and desires and creating designs tailored to them. We believe
+    that thoughtful, well detailed architecture can.
   image: /img/project_bg.jpg
   title:
     mainPhrase: |
