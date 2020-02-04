@@ -14,5 +14,10 @@ projects:
     title: Vommuli Resort
     type: Resort
     year: '2012'
+  - client: State Trading Organization Plc Ltd
+    image: /img/20542798.jpg
+    title: STO Phase 1- Office Complex
+    type: Office
+    year: '2005'
 ---
 
