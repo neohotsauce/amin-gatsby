@@ -1,9 +1,11 @@
 ---
 templateKey: index-page
 banners:
-  - image: /img/bg1.jpg
-    text: |
-      banner 1
+  - image: /img/banner1.jpg
+    text: |-
+      LEADERS IN QUALITY
+      CONSTRUCTION AND 
+      INFRASTRUCTURE
   - image: /img/bg2.jpg
     text: |
       banner 2
