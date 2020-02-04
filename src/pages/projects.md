@@ -6,8 +6,8 @@ banner:
 projects:
   - client: Housing Development Corporation
     image: /img/school.jpg
-    title: Hulhumale N3 Commercial Building
+    title: Hulhumale Neighbourhood Grade 1-12 School
     type: Schools
-    year: '2015'
+    year: '2014'
 ---
 
