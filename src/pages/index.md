@@ -41,13 +41,10 @@ stats:
       Won
 servicesIntro:
   description: >
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-    non proident, sunt in culpa qui officia deserunt mollit anim id est
-    laborum."
+    Today we have much large workforce of over 450 employees, among them
+    includes specialists in the many diverse field of construction industry. In
+    addition to being fully equipped with modern technological machinery's all
+    the projects are well planned and handled by experience professionals. 
   image: /img/building.png
   title:
     mainPhrase: |
