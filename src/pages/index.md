@@ -6,9 +6,10 @@ banners:
       LEADERS IN QUALITY
       CONSTRUCTION AND 
       INFRASTRUCTURE
-  - image: /img/bg2.jpg
+  - image: /img/banner2.jpg
     text: |
-      banner 2
+      TRUST FROM 
+      EXPERIENCE
   - image: /img/bg3.jpg
     text: |
       banner 3
