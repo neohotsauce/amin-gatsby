@@ -10,9 +10,10 @@ banners:
     text: |
       TRUST FROM 
       EXPERIENCE
-  - image: /img/bg3.jpg
+  - image: /img/banner3.jpg
     text: |
-      banner 3
+      BEST INFRASTRUCTURE
+      IN COMPLEX ENVIRONMENT
 mainpitch:
   description: >-
     "Lo ipssdf dolor sit amet, consectetur adipiscing elit, sed do eiusmod
