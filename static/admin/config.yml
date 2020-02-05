@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: https://github.com/neohotsauce/amin-gatsby.git
   branch: master
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
