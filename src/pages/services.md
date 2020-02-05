@@ -25,6 +25,6 @@ services:
       Quantity Surveying
   - description: sdfghjkl
     image: /img/about.jpg
-    title: test
+    title: test is now updated heroku
 ---
 
