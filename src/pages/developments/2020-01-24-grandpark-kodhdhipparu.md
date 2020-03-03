@@ -1,8 +1,9 @@
 ---
 templateKey: development-post
-title: GrandPark Kodhdhipparu
+title: Kodhdhipparu
 type: Resort Development
 year: '2018'
+date: 2020-03-03T06:55:49.252Z
 featuredimage: /img/n1.jpg
 ---
 ##### This is the best development hm!
