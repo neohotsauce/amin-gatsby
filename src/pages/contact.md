@@ -9,7 +9,7 @@ headoffice:
     World Dream - 2nd Floor,
         Handhuvaree Hingung , Male' - 20311
         Rep of Maldives
-  email: rahman@amin.com.mv
+  email: project@amin.mv
   facsimile: (960) 3328424
   logo: /img/logo-amin.jpg
   phone: (960) 334900
