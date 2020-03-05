@@ -4,7 +4,7 @@ title: Kodhdhipparu
 type: Resort Development
 year: '2018'
 date: 2020-03-03T06:55:49.252Z
-featuredimage: /img/85665079.jpg
+featuredimage: /img/GPKD_Destination_Aerial-View-1.JPG
 ---
 ##### This is the best development hm!
 
