@@ -11,7 +11,7 @@ headoffice:
         Rep of Maldives
   email: rahman@amin.com.mv
   facsimile: (960) 3328424
-  logo: /img/logo_green.png
+  logo: /img/logo-amin.jpg
   phone: (960) 334900
 companies:
   - address: |
