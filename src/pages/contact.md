@@ -7,8 +7,8 @@ banner:
 headoffice:
   address: |
     World Dream - 2nd Floor,
-        Handhuvaree Hingung , Male' - 20311
-        Rep of Maldives
+    Handhuvaree Hingung , Male' - 20311
+    Rep of Maldives
   email: project@amin.mv
   facsimile: (960) 3328424
   logo: /img/logo-amin.jpg
