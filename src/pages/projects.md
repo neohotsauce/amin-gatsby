@@ -9,11 +9,11 @@ projects:
     title: HULHUMALE N1 PRIMARY AND SECONDARY SCHOOL | HURAVEE SCHOOL
     type: SCHOOL
     year: '2019'
-  - client: The Residency
-    image: /img/85665079.jpg
-    title: Vommuli Resort
-    type: Resort
-    year: '2012'
+  - client: AMIN CONSTRUCTION / AMIN BUILDWARE
+    image: /img/amin-avenue.png
+    title: AMIN AVENUE
+    type: APARTMENTS
+    year: '2017'
   - client: State Trading Organization Plc Ltd
     image: /img/20542798.jpg
     title: STO Phase 1- Office Complex
