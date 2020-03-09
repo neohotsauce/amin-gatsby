@@ -12,7 +12,7 @@ projects:
   - client: AMIN CONSTRUCTION / AMIN BUILDWARE
     image: /img/amin-avenue.jpg
     title: AMIN AVENUE
-    type: APARTMENTS
+    type: APARTMENT
     year: '2017'
   - client: MINISTRY OF HOUSING AND ENVIRONMENT
     image: /img/convention center in addu.jpg
