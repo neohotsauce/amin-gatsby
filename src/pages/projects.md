@@ -4,11 +4,11 @@ banner:
   image: /img/projects.jpg
   title: PROJECTS THAT MATTER.
 projects:
-  - client: Housing Development Corporation
-    image: /img/school.jpg
-    title: Hulhumale School
-    type: Schools
-    year: '2014'
+  - client: HOUSING DEVELOPMENT CORPORATION
+    image: /img/N1 SCHOOL.jpg
+    title: HULHUMALE N1 PRIMARY AND SECONDARY SCHOOL | HURAVEE SCHOOL
+    type: SCHOOL
+    year: '2019'
   - client: The Residency
     image: /img/85665079.jpg
     title: Vommuli Resort
