@@ -16,7 +16,7 @@ projects:
     year: '2017'
   - client: MINISTRY OF FINANCE AND TREASURY
     image: /img/veelaanage.jpg
-    title: VELAANAAGE - GOVERNMENT OFFICE COMPLEX
+    title: VELAANAAGE
     type: OFFICE
     year: '2010'
   - client: State Electric Company
