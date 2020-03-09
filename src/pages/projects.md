@@ -14,15 +14,15 @@ projects:
     title: AMIN AVENUE
     type: APARTMENTS
     year: '2017'
+  - client: MINISTRY OF HOUSING AND ENVIRONMENT
+    image: /img/convention center in addu.jpg
+    title: CONVENTION CENTER IN ADDU
+    type: Office
+    year: '2011'
   - client: MINISTRY OF FINANCE AND TREASURY
     image: /img/veelaanage.jpg
     title: VELAANAAGE
     type: OFFICE
     year: '2010'
-  - client: State Electric Company
-    image: /img/181161_3_8af5368e260a826a1671f2a0e062fd0c33ede366.jpg
-    title: Stelco Upgrading Project (Wartsila)
-    type: Office
-    year: '2005'
 ---
 
