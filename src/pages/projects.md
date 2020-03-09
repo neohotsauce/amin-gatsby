@@ -24,10 +24,10 @@ projects:
     title: VELAANAAGE
     type: OFFICE
     year: '2010'
-  - client: Test client
-    image: /img/20542798.jpg
-    title: Test project
-    type: Test
-    year: '2020'
+  - client: KODHIPPARU INVESTMENTS PVT LTD
+    image: /img/kodhipparu.jpg
+    title: KODHIPPARU ISLAND RESORT
+    type: RESORTS
+    year: '2016'
 ---
 
