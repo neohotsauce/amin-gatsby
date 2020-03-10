@@ -7,7 +7,7 @@ banner:
 services:
   - description: |+
 
-    image: /img/Civil.jpg
+    image: /img/civil construction.jpg
     title: Building & Civil Construction
   - description: '  '
     image: /img/resort.jpg
