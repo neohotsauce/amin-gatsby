@@ -17,7 +17,7 @@ services:
       administration, contract management and supervision. Our Quantity
       Surveyors are experienced in planning design & estimating from normal
       house, school and high raise office buildings etc.
-    image: /img/s2.jpg
+    image: /img/QS.jpg
     title: |
       Quantity Surveying
   - description: Test
