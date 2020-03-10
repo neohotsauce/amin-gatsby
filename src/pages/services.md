@@ -16,5 +16,8 @@ services:
     image: /img/QS2.jpg
     title: |
       Quantity Surveying
+  - description: ' '
+    image: /img/Value-Engineering-Management.jpg
+    title: Value Engineering and Project Management
 ---
 
