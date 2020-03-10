@@ -10,7 +10,7 @@ services:
     image: /img/Civil.jpg
     title: Building and Civil Construction
   - description: ' '
-    image: /img/QS.jpg
+    image: /img/QS2.jpg
     title: |
       Quantity Surveying
   - description: '  '
