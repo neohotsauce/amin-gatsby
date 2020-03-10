@@ -7,7 +7,7 @@ banner:
 services:
   - description: |+
 
-    image: /img/Construction-min.jpg
+    image: /img/Civil.jpg
     title: Building and Civil Construction
   - description: >
       Quality and quantity has never been an issue to AMIN construction private
