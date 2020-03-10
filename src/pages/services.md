@@ -5,13 +5,10 @@ banner:
   title: |
     OUR SERVICES, YOU CAN TRUST!
 services:
-  - description: >
-      Our team of rentals is very experienced, motivated and active. They are
-      always very friendly with our customers and faxable compare to other
-      rentals. We own following machinery & equipments for rental purposes.
-    image: /img/s1.jpg
-    title: |
-      Rentals
+  - description: |+
+
+    image: /img/Construction-min.jpg
+    title: Building and Civil Construction
   - description: >
       Quality and quantity has never been an issue to AMIN construction private
       limited with many years of experience in the construction trade.We are a
