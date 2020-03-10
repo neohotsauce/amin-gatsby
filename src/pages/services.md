@@ -20,8 +20,8 @@ services:
     image: /img/s2.jpg
     title: |
       Quantity Surveying
-  - description: sdfghjkl
-    image: /img/about.jpg
-    title: test is now updated heroku
+  - description: Test
+    image: /img/resort.jpg
+    title: Resort Construction
 ---
 
