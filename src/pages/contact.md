@@ -1,7 +1,7 @@
 ---
 templateKey: contact-page
 banner:
-  image: /img/contact-banner.jpg
+  image: /img/contact.jpg
   title: |
     CONTACT US
 headoffice:
