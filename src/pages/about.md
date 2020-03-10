@@ -61,7 +61,7 @@ certification:
     - image: /img/q1.jpg
     - image: /img/q2.jpg
   description: >
-    We at Amin Construction strive to exceed our clients' expectations by
+    We at Amin Construction strive to exceed our Clients' expectations by
     constructing buildings of the highest quality that guarantees satisfaction,
     and by completing our projects on time, every time.
 
