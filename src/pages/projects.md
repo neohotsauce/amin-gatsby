@@ -17,7 +17,7 @@ projects:
   - client: MINISTRY OF HOUSING AND ENVIRONMENT
     image: /img/convention center in addu.jpg
     title: CONVENTION CENTER IN ADDU
-    type: Office
+    type: OFFICE
     year: '2011'
   - client: MINISTRY OF FINANCE AND TREASURY
     image: /img/veelaanage.jpg
