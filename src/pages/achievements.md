@@ -1,7 +1,7 @@
 ---
 templateKey: achievements-page
 banner:
-  image: /img/Our-achievement-web-banner-1.png
+  image: /img/services.jpg
   title: |
     OUR ACHIEVEMENTS
 achievements:
