@@ -1,7 +1,7 @@
 ---
 templateKey: achievements-page
 banner:
-  image: /img/services.jpg
+  image: /img/Our-achievement-web-banner-1.png
   title: |
     OUR ACHIEVEMENTS
 achievements:
@@ -36,3 +36,4 @@ achievements:
     title: |
       4 Star Employment Agency
 ---
+
