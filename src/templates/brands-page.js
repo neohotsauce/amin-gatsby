@@ -21,11 +21,11 @@ export const BrandsPageTemplate = ({ banner, brands }) => {
       </div>
 
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="row py-5">
           {brands.map((brand, index) => (
             <div
               key={index}
-              className="col-lg-3 col-md-4 col-sm-6 col-12 d-flex"
+              className="col-lg-3 col-md-4 col-sm-6 col-6 d-flex"
             >
               {brand.image ? (
                 <img
@@ -33,7 +33,7 @@ export const BrandsPageTemplate = ({ banner, brands }) => {
                     !brand.image.publicURL ? brand.image : brand.image.publicURL
                   }
                   alt=""
-                  className="img-fluid mx-auto"
+                  className="img-fluid m-auto"
                 />
               ) : (
                 <img src={null} alt="brand" className="img-fluid mx-auto" />

@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: neohotsauce/amin-gatsby
+  name: git-gateway
   branch: master
-  base_url: http://localhost:3000
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"

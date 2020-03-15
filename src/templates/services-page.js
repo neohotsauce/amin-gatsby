@@ -20,13 +20,13 @@ export const ServicesPageTemplate = ({ banner, services }) => {
         </div>
       </div>
 
-      <div className="block2 ">
+      <div className="block2 py-5">
         <div className="container">
           <div className="row px-3">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="col-lg-6 col-xl-6 col-12 pb-3"
+                className="col-lg-6 col-xl-6 col-12 py-5"
                 align="center"
               >
                 <h2>{service.title}</h2>
@@ -44,6 +44,11 @@ export const ServicesPageTemplate = ({ banner, services }) => {
                             : service.image.publicURL
                         }
                         className="img-fluid"
+                        style={{
+                          height: "250px",
+                          objectFit: "cover",
+                          borderRadius: "35px 5px"
+                        }}
                       />
                     ) : (
                       <img
@@ -54,7 +59,7 @@ export const ServicesPageTemplate = ({ banner, services }) => {
                     )}
                   </div>
                   <div
-                    className="col-lg-6 col-xl-6 col-sm-6 col-12 pt-2"
+                    className="d-flex my-auto col-lg-6 col-xl-6 col-sm-6 col-12 pt-2"
                     align="left"
                   >
                     <p style={{ whiteSpace: "pre-line" }}>
