@@ -1,17 +1,17 @@
 ---
 templateKey: contact-page
 banner:
-  image: /img/contact.jpg
+  image: /img/contact_us_banner_en.png
   title: |
     CONTACT US
 headoffice:
   address: |
     World Dream - 2nd Floor,
-        Handhuvaree Hingung , Male' - 20311
-        Rep of Maldives
-  email: rahman@amin.com.mv
+    Handhuvaree Hingun , Male' - 20311
+    Rep of Maldives
+  email: project@amin.mv
   facsimile: (960) 3328424
-  logo: /img/logo_green.png
+  logo: /img/logo-amin.jpg
   phone: (960) 334900
 companies:
   - address: |
