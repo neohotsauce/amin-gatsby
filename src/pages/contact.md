@@ -21,12 +21,12 @@ companies:
     email: rahman@amin.com.mv
     facsimile: (960) 3328424
     logo: /img/logo_2.jpg
-    name: AMIN BUILDWARE
+    name: Amin Buildware
     phone: (960) 334900
   - email: operations@amin.com.mv
     facsimile: (960) 3328424
     logo: /img/logo_3.jpg
-    name: AMIN MARINE
+    name: Amin Marine
     phone: (960) 3343000
   - address: sdafasdfsd
     email: info@amingiri.com
