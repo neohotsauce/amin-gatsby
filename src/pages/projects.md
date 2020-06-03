@@ -4,16 +4,16 @@ banner:
   image: /img/projects.jpg
   title: PROJECTS THAT MATTER.
 projects:
-  - client: HOUSING DEVELOPMENT CORPORATION
-    image: /img/N1 SCHOOL.jpg
-    title: HULHUMALE N1 PRIMARY AND SECONDARY SCHOOL | HURAVEE SCHOOL
-    type: SCHOOL
-    year: '2019'
   - client: AMIN CONSTRUCTION / AMIN BUILDWARE
     image: /img/amin-avenue.jpg
     title: AMIN AVENUE
     type: APARTMENT
     year: '2017'
+  - client: HOUSING DEVELOPMENT CORPORATION
+    image: /img/N1 SCHOOL.jpg
+    title: HULHUMALE N1 PRIMARY AND SECONDARY SCHOOL | HURAVEE SCHOOL
+    type: SCHOOL
+    year: '2019'
   - client: MINISTRY OF HOUSING AND ENVIRONMENT
     image: /img/convention center in addu.jpg
     title: CONVENTION CENTER IN ADDU
