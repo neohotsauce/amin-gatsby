@@ -69,5 +69,10 @@ projects:
     title: MMA Nine Storey Building
     type: Government Building
     year: '2009'
+  - client: Ministry of Youth & Sports
+    image: /img/9.jpg
+    title: Upgrading of Galolhu National Stadium
+    type: Sports
+    year: '2014'
 ---
 
