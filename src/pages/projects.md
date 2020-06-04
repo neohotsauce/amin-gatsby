@@ -54,5 +54,15 @@ projects:
     title: Domestic International Airport
     type: Airport
     year: '2011'
+  - client: Theemuge
+    image: /img/42.jpg
+    title: Theemugee Launch Personal Acc
+    type: Others
+    year: '2009'
+  - client: Maldives Cricket Board
+    image: /img/43.jpg
+    title: Cricket Pitch
+    type: 'Sports '
+    year: '2010'
 ---
 
