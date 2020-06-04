@@ -67,7 +67,7 @@ projects:
   - client: MMA
     image: /img/48.jpg
     title: MMA Nine Storey Building
-    type: Government Building
+    type: Office
     year: '2009'
   - client: Ministry of Youth & Sports
     image: /img/9.jpg
