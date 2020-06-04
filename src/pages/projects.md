@@ -11,7 +11,7 @@ projects:
     year: '2017'
   - client: Housing Development Corporation
     image: /img/N1 SCHOOL.jpg
-    title: Hulhumale N1 School | Huravee School
+    title: Huravee School
     type: School
     year: '2019'
   - client: MINISTRY OF HOUSING AND ENVIRONMENT
