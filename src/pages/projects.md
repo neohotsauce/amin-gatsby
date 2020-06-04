@@ -39,5 +39,20 @@ projects:
     title: Rehendhi School
     type: School
     year: '2014'
+  - client: Ministry of Health
+    image: /img/15.jpg
+    title: IGMH Renovation
+    type: Hospital
+    year: '2012'
+  - client: Universal Enteprises
+    image: /img/26.jpg
+    title: Rasdhoo Mosque
+    type: Mosque
+    year: '2011'
+  - client: GMR
+    image: /img/30.jpg
+    title: Domestic International Airport
+    type: Airport
+    year: '2011'
 ---
 
