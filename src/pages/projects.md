@@ -2,7 +2,7 @@
 templateKey: projects-page
 banner:
   image: /img/projects.jpg
-  title: Projects that MATTER.
+  title: PROJECTS THAT MATTER
 projects:
   - client: Amin Construction / Amin Buildware
     image: /img/amin-avenue.jpg
