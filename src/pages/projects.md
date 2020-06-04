@@ -9,10 +9,10 @@ projects:
     title: Amin Avenue
     type: Apartments
     year: '2017'
-  - client: HOUSING DEVELOPMENT CORPORATION
+  - client: Housing Development Corporation
     image: /img/N1 SCHOOL.jpg
-    title: HULHUMALE N1 PRIMARY AND SECONDARY SCHOOL | HURAVEE SCHOOL
-    type: SCHOOL
+    title: Hulhumale N1 School | Huravee School
+    type: School
     year: '2019'
   - client: MINISTRY OF HOUSING AND ENVIRONMENT
     image: /img/convention center in addu.jpg
