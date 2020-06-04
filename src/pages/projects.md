@@ -29,5 +29,10 @@ projects:
     title: Kodhipparu Island Resort
     type: Resorts
     year: '2016'
+  - client: The Residency
+    image: /img/8.jpg
+    title: Vommuli Resort
+    type: Resorts
+    year: '2012'
 ---
 
