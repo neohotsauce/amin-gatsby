@@ -24,10 +24,10 @@ projects:
     title: VELAANAAGE
     type: OFFICE
     year: '2010'
-  - client: KODHIPPARU INVESTMENTS PVT LTD
+  - client: Kodhipparu Investments Pvt ltd
     image: /img/kodhipparu.jpg
-    title: KODHIPPARU ISLAND RESORT
-    type: RESORTS
+    title: Kodhipparu Island Resort
+    type: Resorts
     year: '2016'
 ---
 
