@@ -27,10 +27,5 @@ achievements:
       To: Abdulla Mohamed
     image: /img/ach5.jpg
     title: President of MACI
-  - description: |
-      The Srilanka Beuro of Foreign Investment
-    image: /img/award1.jpg
-    title: |
-      4 Star Employment Agency
 ---
 
