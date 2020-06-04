@@ -14,15 +14,15 @@ projects:
     title: Huravee School
     type: School
     year: '2019'
-  - client: MINISTRY OF HOUSING AND ENVIRONMENT
+  - client: Ministry of Housind & Environment
     image: /img/convention center in addu.jpg
-    title: CONVENTION CENTER IN ADDU
-    type: OFFICE
+    title: Convention Center | Addu
+    type: Office
     year: '2011'
-  - client: MINISTRY OF FINANCE AND TREASURY
+  - client: Ministry of Finance & Treasury
     image: /img/veelaanage.jpg
-    title: VELAANAAGE
-    type: OFFICE
+    title: Velaanaage
+    type: Office
     year: '2010'
   - client: Kodhipparu Investments Pvt ltd
     image: /img/kodhipparu.jpg
