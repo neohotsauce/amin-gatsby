@@ -74,5 +74,10 @@ projects:
     title: Upgrading of Galolhu National Stadium
     type: Sports
     year: '2014'
+  - client: State Trading Organization Plc Ltd
+    image: /img/32.jpg
+    title: Fuvamulak Airport
+    type: Airport
+    year: '2011'
 ---
 
