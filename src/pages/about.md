@@ -53,7 +53,7 @@ message:
   fullName: |
     Abdulla Mohamed
   image: /img/chairman.png
-  signature: /img/sign.png
+  signature: /img/md sign.png
   title: |
     Chairman's Message.
 certification:
