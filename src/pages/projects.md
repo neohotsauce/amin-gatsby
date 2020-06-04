@@ -34,5 +34,10 @@ projects:
     title: Vommuli Resort
     type: Resorts
     year: '2012'
+  - client: Housing Development Corporation
+    image: /img/1.jpg
+    title: Rehendhi School
+    type: School
+    year: '2014'
 ---
 
