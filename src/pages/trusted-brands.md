@@ -5,6 +5,6 @@ banner:
   title: |
     TRUSTED BY THE PROS
 brands:
-  - image: /img/hdc.png
+  - image: /img/sto.jpg
 ---
 
