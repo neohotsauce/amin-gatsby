@@ -4,10 +4,10 @@ banner:
   image: /img/projects.jpg
   title: PROJECTS THAT MATTER.
 projects:
-  - client: AMIN CONSTRUCTION / AMIN BUILDWARE
+  - client: Amin Construction / Amin Buildware
     image: /img/amin-avenue.jpg
-    title: AMIN AVENUE
-    type: APARTMENT
+    title: Amin Avenue
+    type: Apartments
     year: '2017'
   - client: HOUSING DEVELOPMENT CORPORATION
     image: /img/N1 SCHOOL.jpg
