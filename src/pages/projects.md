@@ -104,5 +104,10 @@ projects:
     title: "Villgili Mosque\t\t\t"
     type: Institutional
     year: '2019'
+  - client: Ministry of Foriegn Affairs
+    image: /img/102.jpg
+    title: "Ukulhas convention centre\t\t\t"
+    type: Institutional
+    year: '2019'
 ---
 
