@@ -84,5 +84,10 @@ projects:
     title: KKM Building (Reefside)
     type: Residential
     year: '2008'
+  - client: Ministry of Islamic Affairs
+    image: /img/72.jpg
+    title: "Hulhumale Mosque\t\t"
+    type: Institutional
+    year: "2005\t"
 ---
 
