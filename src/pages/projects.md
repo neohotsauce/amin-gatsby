@@ -99,5 +99,10 @@ projects:
     title: "FIFA Goal\t\t\t"
     type: 'Sports '
     year: '2002'
+  - client: Ministry of Islamic Affairs
+    image: /img/101.jpg
+    title: "Villgili Mosque\t\t\t"
+    type: Institutional
+    year: '2019'
 ---
 
