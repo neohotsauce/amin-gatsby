@@ -109,5 +109,10 @@ projects:
     title: "Ukulhas convention centre\t\t\t"
     type: Institutional
     year: '2019'
+  - client: "Ministry of Education\t"
+    image: /img/103.jpg
+    title: "Aminiya School\t\t"
+    type: Institutional
+    year: '2018'
 ---
 
