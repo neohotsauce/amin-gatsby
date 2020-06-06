@@ -79,5 +79,10 @@ projects:
     title: Fuvamulak Airport
     type: Heavy
     year: '2011'
+  - client: Mr. Ahmed Zahir
+    image: /img/51.jpg
+    title: KKM Building (Reefside)
+    type: Residential
+    year: '2008'
 ---
 
