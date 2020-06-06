@@ -89,5 +89,10 @@ projects:
     title: "Hulhumale Mosque\t\t"
     type: Institutional
     year: "2005\t"
+  - client: Ministry of Education
+    image: /img/94.jpg
+    title: "Majeediyaa Institutional\t\t\t"
+    type: Institutional
+    year: '2002'
 ---
 
