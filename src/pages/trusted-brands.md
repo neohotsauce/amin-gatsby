@@ -8,5 +8,6 @@ brands:
   - image: /img/sto.jpg
   - image: /img/hdc.png
   - image: /img/dhiraagu.jpg
+  - image: /img/fam.jpg
 ---
 
