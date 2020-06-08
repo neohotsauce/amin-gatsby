@@ -11,5 +11,6 @@ brands:
   - image: /img/fam.jpg
   - image: /img/finance.jpg
   - image: /img/health.jpg
+  - image: /img/MNU.jpg
 ---
 
