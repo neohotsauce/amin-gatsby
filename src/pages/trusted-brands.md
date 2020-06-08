@@ -9,5 +9,7 @@ brands:
   - image: /img/hdc.png
   - image: /img/dhiraagu.jpg
   - image: /img/fam.jpg
+  - image: /img/finance.jpg
+  - image: /img/health.jpg
 ---
 
