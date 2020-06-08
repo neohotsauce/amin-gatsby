@@ -68,7 +68,5 @@ companies:
   - image: /img/logo_2.jpg
     name: |
       Amin buildware
-  - image: /img/sto.jpg
-    name: Amin Construction
 ---
 
