@@ -6,7 +6,7 @@ banner:
     TRUSTED BY THE PROS
 brands:
   - image: /img/sto.jpg
-  - image: /img/stooo1.jpg
   - image: /img/hdc.png
+  - image: /img/dhiraagu.jpg
 ---
 
