@@ -14,5 +14,6 @@ brands:
   - image: /img/MNU.jpg
   - image: /img/residency.jpg
   - image: /img/stelco.jpg
+  - image: /img/universal.jpg
 ---
 
