@@ -12,5 +12,7 @@ brands:
   - image: /img/finance.jpg
   - image: /img/health.jpg
   - image: /img/MNU.jpg
+  - image: /img/residency.jpg
+  - image: /img/stelco.jpg
 ---
 
