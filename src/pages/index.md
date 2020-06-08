@@ -45,7 +45,7 @@ servicesIntro:
     includes specialists in the many diverse field of construction industry. In
     addition to being fully equipped with modern technological machinery's all
     the projects are well planned and handled by experience professionals. 
-  image: /img/building.png
+  image: /img/service.jpg
   title:
     mainPhrase: |
       SOLUTION
