@@ -79,11 +79,6 @@ projects:
     title: Fuvamulak Airport
     type: Heavy
     year: '2011'
-  - client: Mr. Ahmed Zahir
-    image: /img/51.jpg
-    title: KKM Building (Reefside)
-    type: Residential
-    year: '2008'
   - client: Ministry of Islamic Affairs
     image: /img/72.jpg
     title: "Hulhumale Mosque\t\t"
@@ -114,5 +109,10 @@ projects:
     title: "Aminiya School\t\t"
     type: Institutional
     year: '2018'
+  - client: Mr. Ahmed Zahir
+    image: /img/51.jpg
+    title: KKM Building (Reefside)
+    type: Residential
+    year: '2008'
 ---
 
